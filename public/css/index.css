@@ -25,6 +25,7 @@ main .banner img {
   top: 50%;
   left: 50%;
   translate: -50% -50%;
+  opacity: 0.6;
 }
 main #bulletin-board {
   width: 100%;

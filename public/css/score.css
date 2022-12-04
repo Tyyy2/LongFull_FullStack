@@ -1,0 +1,41 @@
+.container {
+  width: 80vw;
+  height: 80vh;
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.score-input {
+  background-color: bisque;
+  height: 50%;
+  width: 50%;
+  border: 3px solid black;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  left: 0;
+}
+
+.score-level {
+  background-color: bisque;
+  height: 50%;
+  width: 40%;
+  border: 3px solid black;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+}
+
+.score-level p, .score-level h1 {
+  line-height: 5px;
+  padding-left: 50px;
+}/*# sourceMappingURL=成績輸入.css.map */

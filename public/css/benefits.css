@@ -1,0 +1,81 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+img {
+  object-fit: contain;
+}
+
+main {
+  width: 100%;
+  height: 800px;
+  padding: 100px 22.5% 100px;
+  position: relative;
+}
+main .benefits-btns {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  left: 12.76%;
+  top: 104px;
+}
+main .benefits-btns button {
+  margin-bottom: 40px;
+  width: 7.8vw;
+  height: 45px;
+  border-radius: 10px;
+  background-color: #D59F00;
+  border: none;
+  font-size: clamp(16px, 1.25vw, 24px);
+  color: #00468E;
+}
+main .benefits-btns button.active {
+  background-color: #00468E;
+  color: #D59F00;
+}
+main .benefits-card-wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+main .benefits-card-wrap .benefits-card {
+  margin: 0 1.5%;
+  width: 30.3%;
+}
+main .benefits-card-wrap .benefits-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: contain;
+  object-position: top;
+}
+
+@media screen and (max-width: 780px) {
+  main {
+    height: 911px;
+    padding: 110px 17px 67px;
+  }
+  main .benefits-btns {
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 227px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 79px;
+  }
+  main .benefits-btns button {
+    margin-bottom: 7px;
+    width: 100px;
+  }
+  main .benefits-card-wrap .benefits-card {
+    width: 42.67%;
+  }
+  main .benefits-card-wrap .benefits-card img {
+    object-position: center;
+  }
+}/*# sourceMappingURL=benefits.css.map */

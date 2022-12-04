@@ -1,0 +1,84 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+main {
+  width: 100%;
+  height: 845px;
+  padding: 100px 22.5% 37px;
+  position: relative;
+}
+main .service-btns {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  left: 12.76%;
+  top: 104px;
+}
+main .service-btns button {
+  margin-bottom: 40px;
+  width: 7.8vw;
+  height: 45px;
+  border-radius: 10px;
+  background-color: #D59F00;
+  border: none;
+  font-size: 24px;
+  color: #00468E;
+}
+main .swiper {
+  width: 57.3vw;
+  height: 503px;
+}
+main .swiper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+main .swiper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+main .service-swiper-content {
+  width: 57.3vw;
+  height: 141px;
+  margin-top: 57px;
+  display: flex;
+}
+main .service-swiper-content h2 {
+  display: inline-block;
+  width: 7.8vw;
+  height: 45px;
+  border-radius: 10px;
+  background-color: #00468E;
+  font-size: 24px;
+  color: #D59F00;
+  font-weight: 400;
+  text-align: center;
+  line-height: 45px;
+}
+main .service-swiper-content p {
+  display: inline-block;
+  height: 141px;
+  width: 75.64%;
+  margin-left: 67px;
+  font-size: 20px;
+  line-height: 30px;
+}/*# sourceMappingURL=serviceDetail.css.map */

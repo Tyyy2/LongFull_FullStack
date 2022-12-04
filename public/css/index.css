@@ -1,0 +1,706 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main {
+  width: 100%;
+  height: auto;
+  margin-bottom: 100px;
+}
+main .banner {
+  width: 100%;
+  height: 969px;
+  background-image: url("../img/index/banner1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+main .banner img {
+  width: 312px;
+  height: 381px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+}
+main #bulletin-board {
+  width: 100%;
+  height: auto;
+  padding: 70px 120px;
+}
+main #bulletin-board .bulletin-title {
+  display: flex;
+  justify-content: start;
+  align-items: space-between;
+  padding: 0 10%;
+}
+main #bulletin-board .bulletin-title .news-title {
+  width: 130px;
+  height: 45px;
+  font-size: 24px;
+  font-weight: none;
+  font-family: none;
+  color: black;
+  cursor: pointer;
+}
+main #bulletin-board .bulletin-title .employ-title {
+  width: 130px;
+  height: 45px;
+  font-size: 24px;
+  font-weight: none;
+  font-family: none;
+  color: black;
+  cursor: pointer;
+  margin-left: 50px;
+}
+main #bulletin-board .news-area {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+  padding: 0 10%;
+  background-color: white;
+}
+main #bulletin-board .news-area .news-card-area {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main #bulletin-board .news-area .news-card-area .news-card {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main #bulletin-board .news-area .news-card-area .news-card .card-img {
+  width: 50%;
+  height: 100%;
+  margin-right: 20px;
+}
+main #bulletin-board .news-area .news-card-area .news-card .card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+main #bulletin-board .news-area .news-card-area .news-card .card-info-area {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+}
+main #bulletin-board .news-area .news-card-area .news-card .card-info-area .card-title {
+  width: 100%;
+  height: 20%;
+  font-size: 24px;
+  font-weight: 400;
+  font-family: "Arial";
+  color: black;
+  margin-bottom: 10px;
+}
+main #bulletin-board .news-area .news-card-area .news-card .card-info-area .card-content {
+  width: 100%;
+  height: 60%;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Arial";
+  color: black;
+  margin-bottom: 40px;
+}
+main #bulletin-board .news-area .news-card-area .news-card .card-info-area a {
+  width: 100%;
+  height: 10%;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Arial";
+  color: black;
+  text-decoration: none;
+}
+main #bulletin-board .news-area .news-detail-area {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+  margin-top: 50px;
+}
+main #bulletin-board .news-area .news-detail-area .news-detail {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main #bulletin-board .news-area .news-detail-area .news-detail .news-detail-content {
+  width: 70%;
+  height: 80%;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Arial";
+  color: black;
+  word-wrap: break-word;
+  letter-spacing: 3px;
+}
+main #bulletin-board .news-area .news-detail-area .news-detail .news-detail-button {
+  width: 100px;
+  height: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Arial";
+  color: black;
+  text-decoration: none;
+}
+main #bulletin-board .employ-area {
+  width: 100%;
+  height: auto;
+  padding: 0 10%;
+  padding-bottom: 5%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-around;
+}
+main #bulletin-board .employ-area .employ-card {
+  width: 45%;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main #bulletin-board .employ-area .employ-card .card-img {
+  width: 50%;
+  height: 100%;
+  background-color: rgb(180, 180, 180);
+  margin-right: 20px;
+}
+main #bulletin-board .employ-area .employ-card .card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+main #bulletin-board .employ-area .employ-card .card-info-area {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+}
+main #bulletin-board .employ-area .employ-card .card-info-area .card-title {
+  width: 100%;
+  height: 20%;
+  font-size: 24px;
+  font-weight: 400;
+  font-family: "Arial";
+  color: black;
+  margin-bottom: 10px;
+}
+main #bulletin-board .employ-area .employ-card .card-info-area .card-content {
+  width: 100%;
+  height: 60%;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Arial";
+  color: black;
+  margin-bottom: 40px;
+}
+main #bulletin-board .employ-area .employ-card .card-info-area a {
+  width: 100%;
+  height: 10%;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Arial";
+  color: black;
+  text-decoration: none;
+}
+main .banner2 {
+  width: 100%;
+  height: 594px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/index/banner2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+main .banner2 img {
+  width: 174px;
+  height: 187px;
+  margin-bottom: 50px;
+}
+main .banner2 .slogan {
+  width: 60%;
+  height: 41px;
+  font-size: 36px;
+  font-weight: 400;
+  font-family: "Arial";
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .introduction-area {
+  width: 100%;
+  height: 1300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+}
+main .introduction-area .service-series {
+  width: 100%;
+  height: 35%;
+  padding: 0 10%;
+}
+main .introduction-area .service-series .service-title {
+  width: 150px;
+  height: 50px;
+  font-size: 32px;
+  font-weight: 400;
+  font-family: "Arial";
+  color: black;
+  text-decoration: underline;
+  margin-top: 20px;
+}
+main .introduction-area .service-series .service-showcase {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: start;
+  align-content: space-around;
+  flex-wrap: wrap;
+}
+main .introduction-area .service-series .service-showcase .service-item {
+  width: 360px;
+  height: 92px;
+  font-size: 36px;
+  font-weight: 400;
+  font-family: "Arial";
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #D59F00;
+  border-radius: 40px;
+  margin-right: 10px;
+}
+@media screen and (min-width: 811px) and (max-width: 1390px) {
+  main .introduction-area .service-series .service-showcase .service-item {
+    width: 312px;
+    height: 80px;
+  }
+}
+@media screen and (min-width: 780px) and (max-width: 810px) {
+  main .introduction-area .service-series .service-showcase .service-item {
+    width: 234px;
+    height: 60px;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: "Arial";
+    color: white;
+  }
+}
+main .introduction-area .work-sop {
+  width: 100%;
+  height: 20%;
+  padding: 0 10%;
+}
+main .introduction-area .work-sop .work-title {
+  width: 150px;
+  height: 50px;
+  font-size: 32px;
+  font-weight: 400;
+  font-family: "Arial";
+  color: black;
+  text-decoration: underline;
+}
+main .introduction-area .work-sop .work-card-showcase {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 24px;
+}
+main .introduction-area .work-sop .work-card-showcase .work-card {
+  width: 15%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+main .introduction-area .work-sop .work-card-showcase .work-card .work-icon {
+  width: 100%;
+  height: 70%;
+}
+main .introduction-area .work-sop .work-card-showcase .work-card .work-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+main .introduction-area .work-sop .work-card-showcase .work-card .work-name {
+  width: 100%;
+  height: 20%;
+  font-size: 24px;
+  font-weight: 400;
+  font-family: "Arial";
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+main .introduction-area .work-sop .work-card-showcase .work-card .arrow {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  position: absolute;
+  right: 0;
+  top: 35%;
+  transform: translateX(100%);
+}
+main .introduction-area .work-sop .work-card-showcase :nth-child(11) .work-name {
+  width: 100%;
+  height: 20%;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Arial";
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  align-content: flex-start;
+}
+main .introduction-area #question-board {
+  width: 100%;
+  height: 35%;
+  padding: 0 10%;
+  margin-top: 50px;
+}
+main .introduction-area #question-board .question-title {
+  width: 150px;
+  height: 50px;
+  font-size: 32px;
+  font-weight: 400;
+  font-family: "Arial";
+  color: black;
+  text-decoration: underline;
+}
+main .introduction-area #question-board .question-showcase {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+}
+main .introduction-area #question-board .question-showcase .question-content {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+main .introduction-area #question-board .question-showcase .question-content .question {
+  width: 100%;
+  height: 40%;
+  font-size: 24px;
+  font-weight: 400;
+  font-family: "Arial";
+  color: black;
+}
+main .introduction-area #question-board .question-showcase .question-content .answer {
+  width: 100%;
+  height: 40%;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Arial";
+  color: black;
+}
+
+.area_none {
+  display: none !important;
+}
+
+@media screen and (min-width: 781px) and (max-width: 1240px) {
+  main #bulletin-board .news-area .news-card-area .news-card .card-img {
+    width: 40%;
+    height: 100%;
+  }
+  main #bulletin-board .news-area .news-card-area .news-card .card-info-area a {
+    width: 100%;
+    height: 19px;
+    transform: translateY(-100%);
+  }
+  main #bulletin-board .employ-area .employ-card .card-info-area a {
+    width: 100%;
+    height: 19px;
+    transform: translateY(-100%);
+  }
+  main .banner2 .slogan {
+    width: 80%;
+    height: 41px;
+  }
+}
+@media screen and (min-width: 781px) and (max-width: 1240px) and (min-width: 781px) and (max-width: 1000px) {
+  main .banner2 .slogan {
+    font-size: 30px;
+    font-weight: 400;
+    font-family: "Arial";
+    color: white;
+  }
+}
+@media screen and (min-width: 781px) and (max-width: 1240px) {
+  main .introduction-area .service-series .service-showcase {
+    justify-content: space-between;
+  }
+  main .introduction-area .work-sop .work-card-showcase .work-card {
+    width: 10%;
+    height: 80%;
+  }
+  main .introduction-area .work-sop .work-card-showcase .work-card .work-icon {
+    width: 80%;
+    height: 60%;
+  }
+  main .introduction-area .work-sop .work-card-showcase .work-card .work-name {
+    width: 100%;
+    height: 30%;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Arial";
+    color: black;
+  }
+  main .introduction-area .work-sop .work-card-showcase .work-card .arrow {
+    transform: translateX(150%);
+  }
+  main .introduction-area .work-sop .work-card-showcase :nth-child(6) .work-name {
+    width: 150%;
+  }
+}
+@media screen and (max-width: 780px) {
+  main #bulletin-board {
+    padding: 70px 0;
+  }
+  main #bulletin-board .bulletin-title .news-title,
+main #bulletin-board .bulletin-title .employ-title {
+    font-size: 20px;
+    font-weight: none;
+    font-family: none;
+    color: black;
+  }
+  main #bulletin-board .news-area {
+    width: 100%;
+    height: 750px;
+  }
+  main #bulletin-board .news-area .news-card-area {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  main #bulletin-board .news-area .news-card-area .news-card {
+    width: 100%;
+    height: 45%;
+  }
+  main #bulletin-board .news-area .news-card-area .news-card .card-img {
+    width: 20%;
+    height: 100%;
+  }
+  main #bulletin-board .news-area .news-card-area .news-card .card-info-area {
+    width: 70%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+  main #bulletin-board .news-area .news-card-area .news-card .card-info-area .card-title {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Arial";
+    color: black;
+  }
+  main #bulletin-board .news-area .news-card-area .news-card .card-info-area .card-content {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Arial";
+    color: black;
+  }
+  main #bulletin-board .news-area .news-detail-area .news-detail {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+  }
+  main #bulletin-board .news-area .news-detail-area .news-detail .news-detail-content {
+    width: 100%;
+    height: 80%;
+    font-size: 14px;
+  }
+  main #bulletin-board .employ-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+  }
+  main #bulletin-board .employ-area .employ-card {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 5%;
+  }
+  main #bulletin-board .employ-area .employ-card .card-img {
+    width: 20%;
+    height: 100%;
+  }
+  main #bulletin-board .employ-area .employ-card .card-info-area {
+    width: 70%;
+    height: 100%;
+  }
+  main #bulletin-board .employ-area .employ-card .card-info-area .card-title {
+    font-size: 16px;
+    font-weight: none;
+    font-family: none;
+    color: black;
+  }
+  main #bulletin-board .employ-area .employ-card .card-info-area .card-content {
+    font-size: 14px;
+    font-weight: none;
+    font-family: none;
+    color: black;
+  }
+  main .banner2 .slogan {
+    width: 250px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: space-between;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Arial";
+    color: white;
+    flex-wrap: wrap;
+  }
+  main .introduction-area .service-series .service-title {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Arial";
+    color: black;
+  }
+  main .introduction-area .service-series .service-showcase {
+    justify-content: space-between;
+  }
+  main .introduction-area .service-series .service-showcase .service-item {
+    width: 140px;
+    height: 35px;
+    margin: 0 10%;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Arial";
+    color: white;
+  }
+}
+@media screen and (max-width: 780px) and (max-width: 600px) {
+  main .introduction-area .service-series .service-showcase .service-item {
+    margin: 0 5%;
+  }
+}
+@media screen and (max-width: 780px) and (max-width: 450px) {
+  main .introduction-area .service-series .service-showcase .service-item {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 780px) {
+  main .introduction-area .work-sop {
+    width: 100%;
+    height: 30%;
+  }
+  main .introduction-area .work-sop .work-title {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Arial";
+    color: black;
+  }
+  main .introduction-area .work-sop .work-card-showcase {
+    display: flex;
+    justify-content: space-between;
+    align-items: space-between;
+    flex-wrap: wrap;
+  }
+  main .introduction-area .work-sop .work-card-showcase .work-card {
+    width: 30%;
+    height: 20%;
+    margin-right: 5%;
+  }
+  main .introduction-area .work-sop .work-card-showcase .work-card .work-name {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Arial";
+    color: black;
+  }
+  main .introduction-area .work-sop .work-card-showcase .work-card .arrow {
+    width: 20px;
+    height: 20px;
+    transform: translateX(100%);
+  }
+}
+@media screen and (max-width: 780px) {
+  main .introduction-area #question-board {
+    margin-top: 100px;
+  }
+  main .introduction-area #question-board .question-title {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Arial";
+    color: black;
+  }
+  main .introduction-area #question-board .question-showcase .question-content .question {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Arial";
+    color: black;
+  }
+  main .introduction-area #question-board .question-showcase .question-content .answer {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Arial";
+    color: black;
+  }
+}/*# sourceMappingURL=index.css.map */

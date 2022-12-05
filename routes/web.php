@@ -23,7 +23,7 @@ Route::get('/aboutUs', [IndexController::class, 'aboutUs']);
 Route::get('/benefits', [IndexController::class, 'benefits']);
 Route::get('/benefitsDetail', [IndexController::class, 'benefitsDetail']);
 Route::get('/contactUs', [IndexController::class, 'contactUs']);
-Route::get('/newsDetail', [IndexController::class, 'newsDetail']);
+Route::get('/newsDetail/news{id?}', [IndexController::class, 'newsDetail']);
 Route::get('/service', [IndexController::class, 'service']);
 Route::get('/serviceDetail', [IndexController::class, 'serviceDetail']);
 

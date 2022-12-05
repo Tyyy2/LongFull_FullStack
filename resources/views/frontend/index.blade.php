@@ -8,7 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="{{ asset('css/index.css') }}">
-    <link rel="stylesheet" href="{{ asset('./css/header&footer.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/header&footer.css') }}">
 </head>
 
 <body>
@@ -16,48 +16,48 @@
     <header>
         <div class="nav-bar">
             <div class="logo-container">
-                <a class="logo" href="./">
-                    <img class="logo-img" src="./img/Logo.png">
+                <a class="logo" href="/">
+                    <img class="logo-img" src="{{ asset('img/Logo.png') }}">
                 </a>
-                <div class="price-btn"><a href="./contactUs">我要估價<img src="./img/header&footer/SVG-search.svg"
-                            alt=""></a></div>
+                <div class="price-btn"><a href="/contactUs">我要估價<img
+                            src="{{ asset('img/header&footer/SVG-search.svg') }}" alt=""></a></div>
             </div>
 
             <ul class="nav-btn-list">
 
-                <li class="nav-btn btn-aboutUs"><a href="./aboutUs">關於我們</a>
+                <li class="nav-btn btn-aboutUs"><a href="/aboutUs">關於我們</a>
                     <ul>
-                        <li><a href="./aboutUs#info-area">證照執照</a></li>
-                        <li><a href="./aboutUs#info-area">設備機具</a></li>
-                        <li><a href="./aboutUs#history-area">創建歷史</a></li>
-                        <li><a href="./benefits">員工福利</a></li>
+                        <li><a href="/aboutUs#info-area">證照執照</a></li>
+                        <li><a href="/aboutUs#info-area">設備機具</a></li>
+                        <li><a href="/aboutUs#history-area">創建歷史</a></li>
+                        <li><a href="/benefits">員工福利</a></li>
                     </ul>
                 </li>
 
-                <li class="nav-btn"><a href="./index#bulletin-board">最新消息</a>
+                <li class="nav-btn"><a href="/index#bulletin-board">最新消息</a>
                     <ul>
-                        <li><a href="./index#bulletin-board">最新消息</a></li>
-                        <li><a href="./index#bulletin-board">人員招募</a></li>
+                        <li><a href="/index#bulletin-board">最新消息</a></li>
+                        <li><a href="/index#bulletin-board">人員招募</a></li>
                     </ul>
                 </li>
 
-                <li class="nav-btn"><a href="./service">服務實績</a>
+                <li class="nav-btn"><a href="/service">服務實績</a>
                     <ul>
-                        <li><a href="./service">績效照片</a></li>
-                        <li><a href="./service">公益服務</a></li>
+                        <li><a href="/service">績效照片</a></li>
+                        <li><a href="/service">公益服務</a></li>
                     </ul>
                 </li>
 
-                <li class="nav-btn"><a href="./index#question-board">常見問題</a></li>
-                <li class="nav-btn"><a href="./contactUs">聯絡我們</a></li>
+                <li class="nav-btn"><a href="/index#question-board">常見問題</a></li>
+                <li class="nav-btn"><a href="/contactUs">聯絡我們</a></li>
             </ul>
 
             <div class="social-media-area">
-                <a href="./contactUs">
-                    <img src="./img/header&footer/SVG-mail.svg" alt="">
+                <a href="/contactUs">
+                    <img src="{{ asset('img/header&footer/SVG-mail.svg') }}" alt="">
                 </a>
                 <a href="https://www.facebook.com/zzz70042123" target="_blank">
-                    <img src="./img/header&footer/SVG-FB.svg" alt="">
+                    <img src="{{ asset('img/header&footer/SVG-FB.svg') }}" alt="">
                 </a>
 
             </div>
@@ -69,37 +69,37 @@
 
                 <li class="phone-btn phone-about-btn">關於我們
                     <ul class="phone-about-list">
-                        <li><a href="./aboutUs#info-area">證照執照</a></li>
-                        <li><a href="./aboutUs#info-area">設備機具</a></li>
-                        <li><a href="./aboutUs#history-area">創建歷史</a></li>
-                        <li><a href="./benefits">員工福利</a></li>
+                        <li><a href="/aboutUs#info-area">證照執照</a></li>
+                        <li><a href="/aboutUs#info-area">設備機具</a></li>
+                        <li><a href="/aboutUs#history-area">創建歷史</a></li>
+                        <li><a href="/benefits">員工福利</a></li>
                     </ul>
                 </li>
 
                 <li class="phone-btn phone-news-btn">最新消息
                     <ul class="phone-news-list">
-                        <li><a href="./index#bulletin-board">最新消息</a></li>
-                        <li><a href="./index#bulletin-board">人員招募</a></li>
+                        <li><a href="/index#bulletin-board">最新消息</a></li>
+                        <li><a href="/index#bulletin-board">人員招募</a></li>
                     </ul>
                 </li>
 
                 <li class="phone-btn phone-service-btn">服務實績
                     <ul class="phone-service-list">
-                        <li><a href="./service">績效照片</a></li>
-                        <li><a href="./service">公益服務</a></li>
+                        <li><a href="/service">績效照片</a></li>
+                        <li><a href="/service">公益服務</a></li>
                     </ul>
                 </li>
 
-                <li class="phone-btn"><a href="./index#question-board">常見問題</a></li>
-                <li class="phone-btn"><a href="./contactUs">聯絡我們</a></li>
+                <li class="phone-btn"><a href="/index#question-board">常見問題</a></li>
+                <li class="phone-btn"><a href="/contactUs">聯絡我們</a></li>
             </ul>
 
             <div class="phone-social-media">
                 <a href="https://www.facebook.com/zzz70042123" target="_blank">
-                    <img src="./img/header&footer/SVG-FB.svg" alt="">
+                    <img src="{{ asset('img/header&footer/SVG-FB.svg') }}" alt="">
                 </a>
-                <a href="./contactUs">
-                    <img src="./img/header&footer/SVG-mail.svg" alt="">
+                <a href="/contactUs">
+                    <img src="{{ asset('img/header&footer/SVG-mail.svg') }}" alt="">
                 </a>
 
             </div>
@@ -110,7 +110,7 @@
 
     <main>
         <div class="banner">
-            <img src="./img/LF_LOGO_W.png" alt="">
+            <img src="{{ asset('img/LF_LOGO_W.png') }}" alt="">
         </div>
         <div id="bulletin-board">
             <div class="bulletin-title">
@@ -122,22 +122,22 @@
 
                 <div class="news-card-area">
                     <div class="news-card">
-                        <div class="card-img"><img src="./img/index/news-one.png" alt=""></div>
+                        <div class="card-img"><img src="{{asset('img/Logo.png')}}" alt=""></div>
                         <div class="card-info-area">
-                            <div class="card-title">分類宣導</div>
-                            <div class="card-content">垃圾及資源回收分類宣導</div>
-                            <a href="./newsDetail">
+                            <div class="card-title">標題</div>
+                            <div class="card-content">內文</div>
+                            <a href="/newsDetail/news1">
                                 <div class="card-btn">更多資訊</div>
                             </a>
                         </div>
 
                     </div>
                     <div class="news-card">
-                        <div class="card-img"><img src="./img/index/news-two.png" alt=""></div>
+                        <div class="card-img"><img src="{{ asset('img/index/news-two.png') }}" alt=""></div>
                         <div class="card-info-area">
                             <div class="card-title">人才招募</div>
                             <div class="card-content">司機、助手、行政助理、會計助理</div>
-                            <a href="./newsDetail">
+                            <a href="/newsDetail/news2">
                                 <div class="card-btn">更多資訊</div>
                             </a>
                         </div>
@@ -147,16 +147,16 @@
                 <div class="news-detail-area">
                     <div class="news-detail">
                         <div class="news-detail-content">符合台中市環保局節能減碳政策-配置油電車。</div>
-                        <a href="./newsDetail" class="news-detail-button">看更多</a>
+                        <a href="/newsDetail" class="news-detail-button">看更多</a>
                     </div>
                     <div class="news-detail">
                         <div class="news-detail-content">國中、小學獎助學金</div>
-                        <a href="./newsDetail" class="news-detail-button">看更多</a>
+                        <a href="/newsDetail" class="news-detail-button">看更多</a>
                     </div>
                     <div class="news-detail">
                         <div class="news-detail-content">社會回饋計畫-捐贈區公所公務貨車https://www.mypeoplevol.com/Article/33387
                         </div>
-                        <a href="./newsDetail" class="news-detail-button">看更多</a>
+                        <a href="/newsDetail" class="news-detail-button">看更多</a>
                     </div>
                 </div>
             </div>
@@ -186,7 +186,7 @@
         </div>
 
         <div class="banner2">
-            <img src="./img/LF_LOGO_W.png" alt="">
+            <img src="{{ asset('img/LF_LOGO_W.png') }}" alt="">
             <div class="slogan"><span>品質要第一</span><span>服務需至上</span><span>環境無汙染</span><span>工作零災害</span></div>
         </div>
 
@@ -209,54 +209,54 @@
                 <div class="work-card-showcase">
                     <div class="work-card">
                         <div class="work-icon">
-                            <img src="./img/index/SVG-step1.svg" alt="">
+                            <img src="{{ asset('img/index/SVG-step1.svg') }}" alt="">
                         </div>
                         <div class="work-name">詢問報價</div>
-                        <img class="arrow" src="./img/index/SVG-next.svg" alt="">
+                        <img class="arrow" src="{{ asset('img/index/SVG-next.svg') }}" alt="">
                     </div>
 
                     <div class="work-card">
                         <div class="work-icon">
-                            <img src="./img/index/SVG-step2.svg" alt="">
+                            <img src="{{ asset('') }}img/index/SVG-step2.svg" alt="">
 
                         </div>
                         <div class="work-name">提供詳細資訊</div>
-                        <img class="arrow" src="./img/index/SVG-next.svg" alt="">
+                        <img class="arrow" src="{{ asset('img/index/SVG-next.svg') }}" alt="">
                     </div>
 
 
                     <div class="work-card">
                         <div class="work-icon">
-                            <img src="./img/index/SVG-step3.svg" alt="">
+                            <img src="{{ asset('img/index/SVG-step3.svg') }}" alt="">
                         </div>
                         <div class="work-name">現場場勘</div>
-                        <img class="arrow" src="./img/index/SVG-next.svg" alt="">
+                        <img class="arrow" src="{{ asset('img/index/SVG-next.svg') }}" alt="">
                     </div>
 
 
                     <div class="work-card">
                         <div class="work-icon">
-                            <img src="./img/index/SVG-step4.svg" alt="">
+                            <img src="{{ asset('img/index/SVG-step4.svg') }}" alt="">
 
                         </div>
                         <div class="work-name">報價</div>
-                        <img class="arrow" src="./img/index/SVG-next.svg" alt="">
+                        <img class="arrow" src="{{ asset('img/index/SVG-next.svg') }}" alt="">
                     </div>
 
 
                     <div class="work-card">
                         <div class="work-icon">
-                            <img src="./img/index/SVG-step5.svg" alt="">
+                            <img src="{{ asset('img/index/SVG-step5.svg') }}" alt="">
 
                         </div>
                         <div class="work-name">雙方簽約</div>
-                        <img class="arrow" src="./img/index/SVG-next.svg" alt="">
+                        <img class="arrow" src="{{ asset('img/index/SVG-next.svg') }}" alt="">
                     </div>
 
 
                     <div class="work-card">
                         <div class="work-icon">
-                            <img src="./img/index/SVG-step6.svg" alt="">
+                            <img src="{{ asset('img/index/SVG-step6.svg') }}" alt="">
 
                         </div>
                         <div class="work-name">清運日前一天完成放桶，並依合約時間開始清運。</div>
@@ -289,8 +289,8 @@
     </main>
 
     <footer>
-        <a class="footer-logo" href="./">
-            <img class="logo-img" src="./img/Logo.png">
+        <a class="footer-logo" href="/">
+            <img class="logo-img" src="{{ asset('img/Logo.png') }}">
         </a>
         <div class="footer-info">
 
@@ -306,10 +306,10 @@
 
             <div class="footer-social-media-area">
                 <a href="https://www.facebook.com/zzz70042123" target="_blank">
-                    <img src="./img/header&footer/SVG-FB-black.svg" alt="">
+                    <img src="{{ asset('img/header&footer/SVG-FB-black.svg') }}" alt="">
                 </a>
-                <a href="./contactUs">
-                    <img src="./img/header&footer/SVG-mail-black.svg" alt="">
+                <a href="/contactUs">
+                    <img src="{{ asset('img/header&footer/SVG-mail-black.svg') }}" alt="">
                 </a>
 
             </div>
@@ -325,8 +325,8 @@
                     target="_blank"> 隱私權政策</a></span></div>
     </footer>
 
-    <script src="./js/header.js"></script>
-    <script src="./js/index.js"></script>
+    <script src="{{ asset('js/header.js') }}"></script>
+    <script src="{{ asset('js/index.js') }}"></script>
 </body>
 
 </html>

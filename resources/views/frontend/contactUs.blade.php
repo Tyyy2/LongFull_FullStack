@@ -17,48 +17,48 @@
     <header>
         <div class="nav-bar">
             <div class="logo-container">
-                <a class="logo" href="./">
-                    <img class="logo-img" src="./img/Logo.png">
+                <a class="logo" href="/">
+                    <img class="logo-img" src="{{ asset('img/Logo.png') }}">
                 </a>
-                <div class="price-btn"><a href="./contactUs">我要估價&nbsp;&nbsp; <img
-                            src="./img/header&footer/SVG-search.svg" alt=""></a></div>
+                <div class="price-btn"><a href="/contactUs">我要估價<img
+                            src="{{ asset('img/header&footer/SVG-search.svg') }}" alt=""></a></div>
             </div>
 
             <ul class="nav-btn-list">
 
-                <li class="nav-btn btn-aboutUs"><a href="./aboutUs">關於我們</a>
+                <li class="nav-btn btn-aboutUs"><a href="/aboutUs">關於我們</a>
                     <ul>
-                        <li><a href="./aboutUs#info-area">證照執照</a></li>
-                        <li><a href="./aboutUs#info-area">設備機具</a></li>
-                        <li><a href="./aboutUs#history-area">創建歷史</a></li>
-                        <li><a href="./benefits">員工福利</a></li>
+                        <li><a href="/aboutUs#info-area">證照執照</a></li>
+                        <li><a href="/aboutUs#info-area">設備機具</a></li>
+                        <li><a href="/aboutUs#history-area">創建歷史</a></li>
+                        <li><a href="/benefits">員工福利</a></li>
                     </ul>
                 </li>
 
-                <li class="nav-btn"><a href="./index#bulletin-board">最新消息</a>
+                <li class="nav-btn"><a href="/index#bulletin-board">最新消息</a>
                     <ul>
-                        <li><a href="./index#bulletin-board">最新消息</a></li>
-                        <li><a href="./index#bulletin-board">人員招募</a></li>
+                        <li><a href="/index#bulletin-board">最新消息</a></li>
+                        <li><a href="/index#bulletin-board">人員招募</a></li>
                     </ul>
                 </li>
 
-                <li class="nav-btn"><a href="./service">服務實績</a>
+                <li class="nav-btn"><a href="/service">服務實績</a>
                     <ul>
-                        <li><a href="./service">績效照片</a></li>
-                        <li><a href="./service">公益服務</a></li>
+                        <li><a href="/service">績效照片</a></li>
+                        <li><a href="/service">公益服務</a></li>
                     </ul>
                 </li>
 
-                <li class="nav-btn"><a href="./index#question-board">常見問題</a></li>
-                <li class="nav-btn"><a href="./contactUs">聯絡我們</a></li>
+                <li class="nav-btn"><a href="/index#question-board">常見問題</a></li>
+                <li class="nav-btn"><a href="/contactUs">聯絡我們</a></li>
             </ul>
 
             <div class="social-media-area">
-                <a href="./contactUs">
-                    <img src="./img/header&footer/SVG-mail.svg" alt="">
+                <a href="/contactUs">
+                    <img src="{{ asset('img/header&footer/SVG-mail.svg') }}" alt="">
                 </a>
                 <a href="https://www.facebook.com/zzz70042123" target="_blank">
-                    <img src="./img/header&footer/SVG-FB.svg" alt="">
+                    <img src="{{ asset('img/header&footer/SVG-FB.svg') }}" alt="">
                 </a>
 
             </div>
@@ -70,37 +70,37 @@
 
                 <li class="phone-btn phone-about-btn">關於我們
                     <ul class="phone-about-list">
-                        <li><a href="./aboutUs#info-area">證照執照</a></li>
-                        <li><a href="./aboutUs#info-area">設備機具</a></li>
-                        <li><a href="./aboutUs#history-area">創建歷史</a></li>
-                        <li><a href="./benefits">員工福利</a></li>
+                        <li><a href="/aboutUs#info-area">證照執照</a></li>
+                        <li><a href="/aboutUs#info-area">設備機具</a></li>
+                        <li><a href="/aboutUs#history-area">創建歷史</a></li>
+                        <li><a href="/benefits">員工福利</a></li>
                     </ul>
                 </li>
 
                 <li class="phone-btn phone-news-btn">最新消息
                     <ul class="phone-news-list">
-                        <li><a href="./index#bulletin-board">最新消息</a></li>
-                        <li><a href="./index#bulletin-board">人員招募</a></li>
+                        <li><a href="/index#bulletin-board">最新消息</a></li>
+                        <li><a href="/index#bulletin-board">人員招募</a></li>
                     </ul>
                 </li>
 
                 <li class="phone-btn phone-service-btn">服務實績
                     <ul class="phone-service-list">
-                        <li><a href="./service">績效照片</a></li>
-                        <li><a href="./service">公益服務</a></li>
+                        <li><a href="/service">績效照片</a></li>
+                        <li><a href="/service">公益服務</a></li>
                     </ul>
                 </li>
 
-                <li class="phone-btn"><a href="./index#question-board">常見問題</a></li>
-                <li class="phone-btn"><a href="./contactUs">聯絡我們</a></li>
+                <li class="phone-btn"><a href="/index#question-board">常見問題</a></li>
+                <li class="phone-btn"><a href="/contactUs">聯絡我們</a></li>
             </ul>
 
             <div class="phone-social-media">
                 <a href="https://www.facebook.com/zzz70042123" target="_blank">
-                    <img src="./img/header&footer/SVG-FB.svg" alt="">
+                    <img src="{{ asset('img/header&footer/SVG-FB.svg') }}" alt="">
                 </a>
-                <a href="./contactUs">
-                    <img src="./img/header&footer/SVG-mail.svg" alt="">
+                <a href="/contactUs">
+                    <img src="{{ asset('img/header&footer/SVG-mail.svg') }}" alt="">
                 </a>
 
             </div>
@@ -129,10 +129,9 @@
         </form>
 
     </main>
-
     <footer>
-        <a class="footer-logo" href="./">
-            <img class="logo-img" src="./img/Logo.png">
+        <a class="footer-logo" href="/">
+            <img class="logo-img" src="{{ asset('img/Logo.png') }}">
         </a>
         <div class="footer-info">
 
@@ -148,10 +147,10 @@
 
             <div class="footer-social-media-area">
                 <a href="https://www.facebook.com/zzz70042123" target="_blank">
-                    <img src="./img/header&footer/SVG-FB-black.svg" alt="">
+                    <img src="{{ asset('img/header&footer/SVG-FB-black.svg') }}" alt="">
                 </a>
-                <a href="./contactUs">
-                    <img src="./img/header&footer/SVG-mail-black.svg" alt="">
+                <a href="/contactUs">
+                    <img src="{{ asset('img/header&footer/SVG-mail-black.svg') }}" alt="">
                 </a>
 
             </div>
@@ -167,7 +166,8 @@
                     target="_blank"> 隱私權政策</a></span></div>
     </footer>
 
-    <script src="./js/header.js"></script>
+
+    <script src="{{asset('js/header.js')}}"></script>
 </body>
 
 </html>

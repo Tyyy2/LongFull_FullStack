@@ -2,14 +2,14 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="{{ asset('css/service.css') }}">
-  <link rel="stylesheet" href="{{ asset('/css/header&footer.css') }}">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ asset('css/service.css') }}">
+    <link rel="stylesheet" href="{{ asset('/css/header&footer.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 
 </head>
@@ -17,220 +17,219 @@
 <body>
 
 
-  <header>
-    <div class="nav-bar">
-      <div class="logo-container">
-        <a class="logo" href="./">
-          <img class="logo-img" src="./img/Logo.png">
+    <header>
+        <div class="nav-bar">
+            <div class="logo-container">
+                <a class="logo" href="/">
+                    <img class="logo-img" src="{{ asset('img/Logo.png') }}">
+                </a>
+                <div class="price-btn"><a href="/contactUs">我要估價<img
+                            src="{{ asset('img/header&footer/SVG-search.svg') }}" alt=""></a></div>
+            </div>
+
+            <ul class="nav-btn-list">
+
+                <li class="nav-btn btn-aboutUs"><a href="/aboutUs">關於我們</a>
+                    <ul>
+                        <li><a href="/aboutUs#info-area">證照執照</a></li>
+                        <li><a href="/aboutUs#info-area">設備機具</a></li>
+                        <li><a href="/aboutUs#history-area">創建歷史</a></li>
+                        <li><a href="/benefits">員工福利</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-btn"><a href="/index#bulletin-board">最新消息</a>
+                    <ul>
+                        <li><a href="/index#bulletin-board">最新消息</a></li>
+                        <li><a href="/index#bulletin-board">人員招募</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-btn"><a href="/service">服務實績</a>
+                    <ul>
+                        <li><a href="/service">績效照片</a></li>
+                        <li><a href="/service">公益服務</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-btn"><a href="/index#question-board">常見問題</a></li>
+                <li class="nav-btn"><a href="/contactUs">聯絡我們</a></li>
+            </ul>
+
+            <div class="social-media-area">
+                <a href="/contactUs">
+                    <img src="{{ asset('img/header&footer/SVG-mail.svg') }}" alt="">
+                </a>
+                <a href="https://www.facebook.com/zzz70042123" target="_blank">
+                    <img src="{{ asset('img/header&footer/SVG-FB.svg') }}" alt="">
+                </a>
+
+            </div>
+        </div>
+
+        <div class="phone-ham"></div>
+        <div class="phone-menu">
+            <ul class="phone-btn-list">
+
+                <li class="phone-btn phone-about-btn">關於我們
+                    <ul class="phone-about-list">
+                        <li><a href="/aboutUs#info-area">證照執照</a></li>
+                        <li><a href="/aboutUs#info-area">設備機具</a></li>
+                        <li><a href="/aboutUs#history-area">創建歷史</a></li>
+                        <li><a href="/benefits">員工福利</a></li>
+                    </ul>
+                </li>
+
+                <li class="phone-btn phone-news-btn">最新消息
+                    <ul class="phone-news-list">
+                        <li><a href="/index#bulletin-board">最新消息</a></li>
+                        <li><a href="/index#bulletin-board">人員招募</a></li>
+                    </ul>
+                </li>
+
+                <li class="phone-btn phone-service-btn">服務實績
+                    <ul class="phone-service-list">
+                        <li><a href="/service">績效照片</a></li>
+                        <li><a href="/service">公益服務</a></li>
+                    </ul>
+                </li>
+
+                <li class="phone-btn"><a href="/index#question-board">常見問題</a></li>
+                <li class="phone-btn"><a href="/contactUs">聯絡我們</a></li>
+            </ul>
+
+            <div class="phone-social-media">
+                <a href="https://www.facebook.com/zzz70042123" target="_blank">
+                    <img src="{{ asset('img/header&footer/SVG-FB.svg') }}" alt="">
+                </a>
+                <a href="/contactUs">
+                    <img src="{{ asset('img/header&footer/SVG-mail.svg') }}" alt="">
+                </a>
+
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+        <div class="service-btns">
+
+            <button onclick="picShow('equipment',10)">設備機具</button>
+            <button onclick="picShow('license',9)">執照證照</button>
+            <button onclick="picShow('socialService',8)">公益實績</button>
+            <button onclick="picShow('else',3)">其他</button>
+        </div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="{{asset('img/socialService/socialServiceSwiper1.jpg')}}" alt=""></div>
+                <div class="swiper-slide"><img src="{{asset('img/socialService/socialServiceSwiper2.jpg')}}" alt=""></div>
+                <div class="swiper-slide"><img src="{{asset('img/socialService/socialServiceSwiper3.jpg')}}" alt=""></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="service-card-wrap">
+        </div>
+    </main>
+
+    <footer>
+        <a class="footer-logo" href="/">
+            <img class="logo-img" src="{{ asset('img/Logo.png') }}">
         </a>
-        <div class="price-btn"><a href="./contactUs">我要估價&nbsp;&nbsp; <img src="./img/header&footer/SVG-search.svg"
-              alt=""></a></div>
-      </div>
+        <div class="footer-info">
 
-      <ul class="nav-btn-list">
+            <ul class="information">臺中市南屯區大墩四街400巷20號1樓
+                <li>電話：04-23827080/04-23827081</li>
+                <li>傳真：04-23824270</li>
+                <li>聯絡信箱：n6260@ms32.hinet.net</li>
+            </ul>
 
-        <li class="nav-btn btn-aboutUs"><a href="./aboutUs">關於我們</a>
-          <ul>
-            <li><a href="./aboutUs#info-area">證照執照</a></li>
-            <li><a href="./aboutUs#info-area">設備機具</a></li>
-            <li><a href="./aboutUs#history-area">創建歷史</a></li>
-            <li><a href="./benefits">員工福利</a></li>
-          </ul>
-        </li>
+            <ul class="business-hours">營業時間:
+                <li> 週一~五: 08:00 – 17:00</li>
+            </ul>
 
-        <li class="nav-btn"><a href="./index#bulletin-board">最新消息</a>
-          <ul>
-            <li><a href="./index#bulletin-board">最新消息</a></li>
-            <li><a href="./index#bulletin-board">人員招募</a></li>
-          </ul>
-        </li>
+            <div class="footer-social-media-area">
+                <a href="https://www.facebook.com/zzz70042123" target="_blank">
+                    <img src="{{ asset('img/header&footer/SVG-FB-black.svg') }}" alt="">
+                </a>
+                <a href="/contactUs">
+                    <img src="{{ asset('img/header&footer/SVG-mail-black.svg') }}" alt="">
+                </a>
 
-        <li class="nav-btn"><a href="./service">服務實績</a>
-          <ul>
-            <li><a href="./service">績效照片</a></li>
-            <li><a href="./service">公益服務</a></li>
-          </ul>
-        </li>
+            </div>
 
-        <li class="nav-btn"><a href="./index#question-board">常見問題</a></li>
-        <li class="nav-btn"><a href="./contactUs">聯絡我們</a></li>
-      </ul>
+        </div>
+        <div class="google-map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.847069559323!2d120.6420298148232!3d24.142008284397768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693db8f531fd3d%3A0xe6f1a995d9e8592d!2z5qau6LyU5LyB5qWt6IKh5Lu95pyJ6ZmQ5YWs5Y-4!5e0!3m2!1szh-TW!2stw!4v1668348951020!5m2!1szh-TW!2stw"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="copy-right">CopyRight&copy;榮輔企業股份有限公司&nbsp;<span><a href="https://www.moi.gov.tw/cp.aspx?n=10953"
+                    target="_blank"> 隱私權政策</a></span></div>
+    </footer>
 
-      <div class="social-media-area">
-        <a href="./contactUs">
-          <img src="./img/header&footer/SVG-mail.svg" alt="">
-        </a>
-        <a href="https://www.facebook.com/zzz70042123" target="_blank">
-          <img src="./img/header&footer/SVG-FB.svg" alt="">
-        </a>
+    <script src="{{asset('js/header.js')}}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
-      </div>
-    </div>
-
-    <div class="phone-ham"></div>
-    <div class="phone-menu">
-      <ul class="phone-btn-list">
-
-        <li class="phone-btn phone-about-btn">關於我們
-          <ul class="phone-about-list">
-            <li><a href="./aboutUs#info-area">證照執照</a></li>
-            <li><a href="./aboutUs#info-area">設備機具</a></li>
-            <li><a href="./aboutUs#history-area">創建歷史</a></li>
-            <li><a href="./benefits">員工福利</a></li>
-          </ul>
-        </li>
-
-        <li class="phone-btn phone-news-btn">最新消息
-          <ul class="phone-news-list">
-            <li><a href="./index#bulletin-board">最新消息</a></li>
-            <li><a href="./index#bulletin-board">人員招募</a></li>
-          </ul>
-        </li>
-
-        <li class="phone-btn phone-service-btn">服務實績
-          <ul class="phone-service-list">
-            <li><a href="./service">績效照片</a></li>
-            <li><a href="./service">公益服務</a></li>
-          </ul>
-        </li>
-
-        <li class="phone-btn"><a href="./index#question-board">常見問題</a></li>
-        <li class="phone-btn"><a href="./contactUs">聯絡我們</a></li>
-      </ul>
-
-      <div class="phone-social-media">
-        <a href="https://www.facebook.com/zzz70042123" target="_blank">
-          <img src="./img/header&footer/SVG-FB.svg" alt="">
-        </a>
-        <a href="./contactUs">
-          <img src="./img/header&footer/SVG-mail.svg" alt="">
-        </a>
-
-      </div>
-
-    </div>
-  </header>
-
-
-  <main>
-    <div class="service-btns">
-
-      <button onclick="picShow('equipment',10)">設備機具</button>
-      <button onclick="picShow('license',9)">執照證照</button>
-      <button onclick="picShow('socialService',8)">公益實績</button>
-      <button onclick="picShow('else',3)">其他</button>
-    </div>
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src="./img/socialService/socialServiceSwiper1.jpg" alt=""></div>
-          <div class="swiper-slide"><img src="./img/socialService/socialServiceSwiper2.jpg" alt=""></div>
-          <div class="swiper-slide"><img src="./img/socialService/socialServiceSwiper3.jpg" alt=""></div>
-      </div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-pagination"></div>
-  </div>
-    <div class="service-card-wrap">
-    </div>
-  </main>
-
-  <footer>
-    <a class="footer-logo" href="./">
-      <img class="logo-img" src="./img/Logo.png">
-    </a>
-    <div class="footer-info">
-
-      <ul class="information">臺中市南屯區大墩四街400巷20號1樓
-        <li>電話：04-23827080/04-23827081</li>
-        <li>傳真：04-23824270</li>
-        <li>聯絡信箱：n6260@ms32.hinet.net</li>
-      </ul>
-
-      <ul class="business-hours">營業時間:
-        <li> 週一~五: 08:00 – 17:00</li>
-      </ul>
-
-      <div class="footer-social-media-area">
-        <a href="https://www.facebook.com/zzz70042123" target="_blank">
-          <img src="./img/header&footer/SVG-FB-black.svg" alt="">
-        </a>
-        <a href="./contactUs">
-          <img src="./img/header&footer/SVG-mail-black.svg" alt="">
-        </a>
-
-      </div>
-
-    </div>
-    <div class="google-map">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.847069559323!2d120.6420298148232!3d24.142008284397768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693db8f531fd3d%3A0xe6f1a995d9e8592d!2z5qau6LyU5LyB5qWt6IKh5Lu95pyJ6ZmQ5YWs5Y-4!5e0!3m2!1szh-TW!2stw!4v1668348951020!5m2!1szh-TW!2stw"
-        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-    <div class="copy-right">CopyRight&copy;榮輔企業股份有限公司&nbsp;<span><a href="https://www.moi.gov.tw/cp.aspx?n=10953"
-          target="_blank"> 隱私權政策</a></span></div>
-  </footer>
-
-  <script src="./js/header.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-
-  <script>
-    const cardWrap = document.querySelector('.service-card-wrap')
-    const btns = document.querySelectorAll('main button')
-    var swiper = new Swiper(".mySwiper", {
-          cssMode: true,
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-          pagination: {
-            el: ".swiper-pagination",
-          },
-          mousewheel: true,
-          keyboard: true,
+    <script>
+        const cardWrap = document.querySelector('.service-card-wrap')
+        const btns = document.querySelectorAll('main button')
+        var swiper = new Swiper(".mySwiper", {
+            cssMode: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            mousewheel: true,
+            keyboard: true,
         });
 
-    function picShow(type, qty) {
-      btns.forEach(btn => {
-        btn.classList.remove('active')
-      });
-      event.target.classList.add('active')
-      cardWrap.innerHTML = ''
-      if (type == 'socialService') {
-        document.querySelector('main').classList.add('active')
-        document.querySelector('.swiper').classList.add('active')
-        cardWrap.classList.add('active')
-        for (let index = 1; index < qty; index++) {
-          cardWrap.innerHTML += `
+        function picShow(type, qty) {
+            btns.forEach(btn => {
+                btn.classList.remove('active')
+            });
+            event.target.classList.add('active')
+            cardWrap.innerHTML = ''
+            if (type == 'socialService') {
+                document.querySelector('main').classList.add('active')
+                document.querySelector('.swiper').classList.add('active')
+                cardWrap.classList.add('active')
+                for (let index = 1; index < qty; index++) {
+                    cardWrap.innerHTML += `
             <div class="service-card active">
-              <img onclick=lightbox() src="./img/${type}/${index}.jpg" alt="">
+              <img onclick=lightbox() src="{{asset('img/${type}/${index}.jpg')}}" alt="">
           </div>
           `
-        }
-      } else {
-        document.querySelector('main').classList.remove('active')
-        document.querySelector('.swiper').classList.remove('active')
-        cardWrap.classList.remove('active')
-        for (let index = 1; index < qty; index++) {
-          cardWrap.innerHTML += `
+                }
+            } else {
+                document.querySelector('main').classList.remove('active')
+                document.querySelector('.swiper').classList.remove('active')
+                cardWrap.classList.remove('active')
+                for (let index = 1; index < qty; index++) {
+                    cardWrap.innerHTML += `
             <div class="service-card">
-              <img onclick=lightbox() src="./img/${type}/${index}.jpg" alt="">
+              <img onclick=lightbox() src="{{asset('img/${type}/${index}.jpg')}}" alt="">
           </div>
           `
+                }
+            }
         }
-      }
-    }
 
-    function lightbox() {
-      Swal.fire({
-        imageUrl: `${event.target.src}`,
-        imageHeight: 500,
-        imageAlt: '服務照片',
-        confirmButtonColor:'#00391F'
+        function lightbox() {
+            Swal.fire({
+                imageUrl: `${event.target.src}`,
+                imageHeight: 500,
+                imageAlt: '服務照片',
+                confirmButtonColor: '#00391F'
 
-      })
-    }
-  </script>
+            })
+        }
+    </script>
 
 </body>
 

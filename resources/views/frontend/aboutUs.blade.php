@@ -20,47 +20,47 @@
         <div class="nav-bar">
             <div class="logo-container">
                 <a class="logo" href="/">
-                    <img class="logo-img" src="./img/Logo.png">
+                    <img class="logo-img" src="{{ asset('img/Logo.png') }}">
                 </a>
-                <div class="price-btn"><a href="/contactUs">我要估價&nbsp;&nbsp; <img
-                            src="./img/header&footer/SVG-search.svg" alt=""></a></div>
+                <div class="price-btn"><a href="/contactUs">我要估價<img
+                            src="{{ asset('img/header&footer/SVG-search.svg') }}" alt=""></a></div>
             </div>
 
             <ul class="nav-btn-list">
 
-                <li class="nav-btn btn-aboutUs"><a href="./aboutUs">關於我們</a>
+                <li class="nav-btn btn-aboutUs"><a href="/aboutUs">關於我們</a>
                     <ul>
-                        <li><a href="./aboutUs#info-area">證照執照</a></li>
-                        <li><a href="./aboutUs#info-area">設備機具</a></li>
-                        <li><a href="./aboutUs#history-area">創建歷史</a></li>
-                        <li><a href="./benefits">員工福利</a></li>
+                        <li><a href="/aboutUs#info-area">證照執照</a></li>
+                        <li><a href="/aboutUs#info-area">設備機具</a></li>
+                        <li><a href="/aboutUs#history-area">創建歷史</a></li>
+                        <li><a href="/benefits">員工福利</a></li>
                     </ul>
                 </li>
 
-                <li class="nav-btn"><a href="./index#bulletin-board">最新消息</a>
+                <li class="nav-btn"><a href="/index#bulletin-board">最新消息</a>
                     <ul>
-                        <li><a href="./index#bulletin-board">最新消息</a></li>
-                        <li><a href="./index#bulletin-board">人員招募</a></li>
+                        <li><a href="/index#bulletin-board">最新消息</a></li>
+                        <li><a href="/index#bulletin-board">人員招募</a></li>
                     </ul>
                 </li>
 
-                <li class="nav-btn"><a href="./service">服務實績</a>
+                <li class="nav-btn"><a href="/service">服務實績</a>
                     <ul>
-                        <li><a href="./service">績效照片</a></li>
-                        <li><a href="./service">公益服務</a></li>
+                        <li><a href="/service">績效照片</a></li>
+                        <li><a href="/service">公益服務</a></li>
                     </ul>
                 </li>
 
-                <li class="nav-btn"><a href="./index#question-board">常見問題</a></li>
-                <li class="nav-btn"><a href="./contactUs">聯絡我們</a></li>
+                <li class="nav-btn"><a href="/index#question-board">常見問題</a></li>
+                <li class="nav-btn"><a href="/contactUs">聯絡我們</a></li>
             </ul>
 
             <div class="social-media-area">
-                <a href="./contactUs">
-                    <img src="./img/header&footer/SVG-mail.svg" alt="">
+                <a href="/contactUs">
+                    <img src="{{ asset('img/header&footer/SVG-mail.svg') }}" alt="">
                 </a>
                 <a href="https://www.facebook.com/zzz70042123" target="_blank">
-                    <img src="./img/header&footer/SVG-FB.svg" alt="">
+                    <img src="{{ asset('img/header&footer/SVG-FB.svg') }}" alt="">
                 </a>
 
             </div>
@@ -72,37 +72,37 @@
 
                 <li class="phone-btn phone-about-btn">關於我們
                     <ul class="phone-about-list">
-                        <li><a href="./aboutUs#info-area">證照執照</a></li>
-                        <li><a href="./aboutUs#info-area">設備機具</a></li>
-                        <li><a href="./aboutUs#history-area">創建歷史</a></li>
-                        <li><a href="./benefits">員工福利</a></li>
+                        <li><a href="/aboutUs#info-area">證照執照</a></li>
+                        <li><a href="/aboutUs#info-area">設備機具</a></li>
+                        <li><a href="/aboutUs#history-area">創建歷史</a></li>
+                        <li><a href="/benefits">員工福利</a></li>
                     </ul>
                 </li>
 
                 <li class="phone-btn phone-news-btn">最新消息
                     <ul class="phone-news-list">
-                        <li><a href="./index#bulletin-board">最新消息</a></li>
-                        <li><a href="./index#bulletin-board">人員招募</a></li>
+                        <li><a href="/index#bulletin-board">最新消息</a></li>
+                        <li><a href="/index#bulletin-board">人員招募</a></li>
                     </ul>
                 </li>
 
                 <li class="phone-btn phone-service-btn">服務實績
                     <ul class="phone-service-list">
-                        <li><a href="./service">績效照片</a></li>
-                        <li><a href="./service">公益服務</a></li>
+                        <li><a href="/service">績效照片</a></li>
+                        <li><a href="/service">公益服務</a></li>
                     </ul>
                 </li>
 
-                <li class="phone-btn"><a href="./index#question-board">常見問題</a></li>
-                <li class="phone-btn"><a href="./contactUs">聯絡我們</a></li>
+                <li class="phone-btn"><a href="/index#question-board">常見問題</a></li>
+                <li class="phone-btn"><a href="/contactUs">聯絡我們</a></li>
             </ul>
 
             <div class="phone-social-media">
                 <a href="https://www.facebook.com/zzz70042123" target="_blank">
-                    <img src="./img/header&footer/SVG-FB.svg" alt="">
+                    <img src="{{ asset('img/header&footer/SVG-FB.svg') }}" alt="">
                 </a>
-                <a href="./contactUs">
-                    <img src="./img/header&footer/SVG-mail.svg" alt="">
+                <a href="/contactUs">
+                    <img src="{{ asset('img/header&footer/SVG-mail.svg') }}" alt="">
                 </a>
 
             </div>
@@ -157,19 +157,19 @@
                 <div class="info-name">設備機具</div>
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="./img/aboutUs/machine/car(1).jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="./img/aboutUs/machine/car(2).jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="./img/aboutUs/machine/car(3).jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="./img/aboutUs/machine/car(4).jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="./img/aboutUs/machine/car(5).jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="./img/aboutUs/machine/car(6).jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="./img/aboutUs/machine/car(7).jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="./img/aboutUs/machine/car(8).jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="./img/aboutUs/machine/car(9).jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="./img/aboutUs/machine/car(10).jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="{{asset('img/aboutUs/machine/car(1).jpg')}}" alt=""></div>
+                        <div class="swiper-slide"><img src="{{asset('img/aboutUs/machine/car(2).jpg')}}" alt=""></div>
+                        <div class="swiper-slide"><img src="{{asset('img/aboutUs/machine/car(3).jpg')}}" alt=""></div>
+                        <div class="swiper-slide"><img src="{{asset('img/aboutUs/machine/car(4).jpg')}}" alt=""></div>
+                        <div class="swiper-slide"><img src="{{asset('img/aboutUs/machine/car(5).jpg')}}" alt=""></div>
+                        <div class="swiper-slide"><img src="{{asset('img/aboutUs/machine/car(6).jpg')}}" alt=""></div>
+                        <div class="swiper-slide"><img src="{{asset('img/aboutUs/machine/car(7).jpg')}}" alt=""></div>
+                        <div class="swiper-slide"><img src="{{asset('img/aboutUs/machine/car(8).jpg')}}" alt=""></div>
+                        <div class="swiper-slide"><img src="{{asset('img/aboutUs/machine/car(9).jpg')}}" alt=""></div>
+                        <div class="swiper-slide"><img src="{{asset('img/aboutUs/machine/car(10).jpg')}}" alt=""></div>
                     </div>
                 </div>
-                <a href="./service">
+                <a href="/service">
                     <div class="info-btn">看更多</div>
                 </a>
             </div>
@@ -178,25 +178,25 @@
                 <div class="info-name">證照執照</div>
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="./img/aboutUs/license/license(1).jpg" alt="">
+                        <div class="swiper-slide"><img src="{{asset('img/aboutUs/license/license(1).jpg')}}" alt="">
                         </div>
-                        <div class="swiper-slide"><img src="./img/aboutUs/license/license(2).jpg" alt="">
+                        <div class="swiper-slide"><img src="{{asset('img/aboutUs/license/license(2).jpg')}}" alt="">
                         </div>
-                        <div class="swiper-slide"><img src="./img/aboutUs/license/license(3).jpg" alt="">
+                        <div class="swiper-slide"><img src="{{asset('img/aboutUs/license/license(3).jpg')}}" alt="">
                         </div>
-                        <div class="swiper-slide"><img src="./img/aboutUs/license/license(4).jpg" alt="">
+                        <div class="swiper-slide"><img src="{{asset('img/aboutUs/license/license(4).jpg')}}" alt="">
                         </div>
-                        <div class="swiper-slide"><img src="./img/aboutUs/license/license(5).jpg" alt="">
+                        <div class="swiper-slide"><img src="{{asset('img/aboutUs/license/license(5).jpg')}}" alt="">
                         </div>
-                        <div class="swiper-slide"><img src="./img/aboutUs/license/license(6).jpg" alt="">
+                        <div class="swiper-slide"><img src="{{asset('img/aboutUs/license/license(6).jpg')}}" alt="">
                         </div>
-                        <div class="swiper-slide"><img src="./img/aboutUs/license/license(7).jpg" alt="">
+                        <div class="swiper-slide"><img src="{{asset('img/aboutUs/license/license(7).jpg')}}" alt="">
                         </div>
-                        <div class="swiper-slide"><img src="./img/aboutUs/license/license(8).jpg" alt="">
+                        <div class="swiper-slide"><img src="{{asset('img/aboutUs/license/license(8).jpg')}}" alt="">
                         </div>
                     </div>
                 </div>
-                <a href="./service">
+                <a href="/service">
                     <div class="info-btn">看更多</div>
                 </a>
             </div>
@@ -205,15 +205,15 @@
                 <div class="info-name">公益服務</div>
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="./img/aboutUs/service/service(1).jpg" alt="">
+                        <div class="swiper-slide"><img src="{{asset('img/aboutUs/service/service(1).jpg')}}" alt="">
                         </div>
-                        <div class="swiper-slide"><img src="./img/aboutUs/service/service(2).jpg" alt="">
+                        <div class="swiper-slide"><img src="{{asset('img/aboutUs/service/service(2).jpg')}}" alt="">
                         </div>
-                        <div class="swiper-slide"><img src="./img/aboutUs/service/service(3).jpg" alt="">
+                        <div class="swiper-slide"><img src="{{asset('img/aboutUs/service/service(3).jpg')}}" alt="">
                         </div>
                     </div>
                 </div>
-                <a href="./service">
+                <a href="/service">
                     <div class="info-btn">看更多</div>
                 </a>
             </div>
@@ -223,37 +223,37 @@
             <div class="client-title">榮輔服務單位</div>
             <div class="client-showcase">
                 <div class="client-card">
-                    <img src="./img/aboutUs/client/client_hocom.jpg" alt="">
+                    <img src="{{asset('img/aboutUs/client/client_hocom.jpg')}}" alt="">
                     <div class="client-name">裕毛屋</div>
 
                 </div>
 
                 <div class="client-card">
-                    <img src="./img/aboutUs/client/client_meatMarket.jpg" alt="">
+                    <img src="{{asset('img/aboutUs/client/client_meatMarket.jpg')}}" alt="">
                     <div class="client-name">肉品市場</div>
 
                 </div>
 
                 <div class="client-card">
-                    <img src="./img/aboutUs/client/client_carrefour.jpg" alt="">
+                    <img src="{{asset('img/aboutUs/client/client_carrefour.jpg')}}" alt="">
                     <div class="client-name">家樂福青海店</div>
                 </div>
 
                 <div class="client-card">
-                    <img src="./img/aboutUs/client/client_FCU.jpg" alt="">
+                    <img src="{{asset('img/aboutUs/client/client_FCU.jpg')}}" alt="">
                     <div class="client-name">逢甲大學</div>
 
                 </div>
 
                 <div class="client-card">
-                    <img src="./img/aboutUs/client/client_funcom.jpg" alt="">
+                    <img src="{{asset('img/aboutUs/client/client_funcom.jpg')}}" alt="">
                     <div class="client-name">楓康超市</div>
 
 
                 </div>
 
                 <div class="client-card">
-                    <img src="./img/aboutUs/client/client_ckcgroup.jpg" alt="">
+                    <img src="{{asset('img/aboutUs/client/client_ckcgroup.jpg')}}" alt="">
                     <div class="client-name">潮港城</div>
 
                 </div>
@@ -266,8 +266,8 @@
 
 
     <footer>
-        <a class="footer-logo" href="./">
-            <img class="logo-img" src="./img/Logo.png">
+        <a class="footer-logo" href="/">
+            <img class="logo-img" src="{{ asset('img/Logo.png') }}">
         </a>
         <div class="footer-info">
 
@@ -283,10 +283,10 @@
 
             <div class="footer-social-media-area">
                 <a href="https://www.facebook.com/zzz70042123" target="_blank">
-                    <img src="./img/header&footer/SVG-FB-black.svg" alt="">
+                    <img src="{{ asset('img/header&footer/SVG-FB-black.svg') }}" alt="">
                 </a>
-                <a href="./contactUs">
-                    <img src="./img/header&footer/SVG-mail-black.svg" alt="">
+                <a href="/contactUs">
+                    <img src="{{ asset('img/header&footer/SVG-mail-black.svg') }}" alt="">
                 </a>
 
             </div>
@@ -302,7 +302,8 @@
                     target="_blank"> 隱私權政策</a></span></div>
     </footer>
 
-    <script src="./js/header.js"></script>
+
+    <script src="{{asset('')}}js/header.js"></script>
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>

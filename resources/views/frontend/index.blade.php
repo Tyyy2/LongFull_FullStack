@@ -122,7 +122,7 @@
 
                 <div class="news-card-area">
                     <div class="news-card">
-                        <div class="card-img"><img src="{{asset('img/Logo.png')}}" alt=""></div>
+                        <div class="card-img"><img src="{{ asset('img/Logo.png') }}" alt=""></div>
                         <div class="card-info-area">
                             <div class="card-title">標題</div>
                             <div class="card-content">內文</div>

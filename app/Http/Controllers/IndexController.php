@@ -13,7 +13,7 @@ class IndexController extends Controller
 
     public function index()
     {
-        $news_database = index_new::get();
+        $news_database = index_new::orderby('id','desc')->take(2)->get();
 
         return view('frontend.index', compact('news_database'));
     }
@@ -47,7 +47,7 @@ class IndexController extends Controller
 
     public function newsDetail($id)
     {
-        $newsDetail_database = index_new::find($id);
+        $newsDetail_database = index_new::get();
 
         return view('frontend.newsDetail', compact('newsDetail_database'));
     }

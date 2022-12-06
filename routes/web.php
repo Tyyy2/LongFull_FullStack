@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BackendController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\IndexController;
@@ -16,7 +17,7 @@ use App\Http\Controllers\IndexController;
 */
 
 
-//Front-End
+//FrontEnd
 Route::get('/', [IndexController::class, 'index']);
 Route::get('/index', [IndexController::class, 'index']);
 Route::get('/aboutUs', [IndexController::class, 'aboutUs']);
@@ -26,11 +27,11 @@ Route::get('/contactUs', [IndexController::class, 'contactUs']);
 Route::get('/newsDetail/news{id?}', [IndexController::class, 'newsDetail']);
 Route::get('/service', [IndexController::class, 'service']);
 Route::get('/serviceDetail', [IndexController::class, 'serviceDetail']);
+Route::post('/contactUs/store', [IndexController::class, 'store']);
 
 
 
-
-
+//--BackEnd
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
@@ -40,5 +41,8 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
+
+
+
 
 require __DIR__ . '/auth.php';

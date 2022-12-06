@@ -110,20 +110,25 @@
 
 
     <main>
-        <form action="" get="post">
-            <h2>聯絡我們</h2>
+        <form action="/contactUs/store" method="POST">
+
+
+            <h2>聯絡我們</h2>@csrf
             <div class="contact-input-info">
-                <label for="name">姓名<input id="name" type="text" name="name"></label>
-                <label for="phone">電話<input id="phone" type="text" name="phone"></label>
-                <label for="email">信箱<input id="email" type="text" name="email"></label>
+                <label for="name">姓名<input id="name" type="text" name="contact_name"></label>
+                <label for="phone">電話<input id="phone" type="text" name="contact_phone"></label>
+                <label for="email">信箱<input id="email" type="text" name="contact_mail"></label>
                 <p>需求勾選</p>
-                <label for="common"><span>一般垃圾</span><input id="common" name="trash" type="checkbox"></label>
-                <label for="uncommon"><span>資源回收</span><input id="uncommon" name="trash" type="checkbox"></label>
-                <label for="notcommon"><span>其他</span><input id="notcommon" name="notcommon" type="checkbox"></label>
+                <label for="common"><span>一般垃圾</span><input id="common" name="common_trash"
+                        type="checkbox"></label>
+                <label for="uncommon"><span>資源回收</span><input id="uncommon" name="recycle_trash"
+                        type="checkbox"></label>
+                <label for="notcommon"><span>其他</span><input id="notcommon" name="uncommon_trash"
+                        type="checkbox"></label>
             </div>
             <div class="contact-input-context">
                 <label for="context">內文</label>
-                <textarea name="context" id="context"></textarea>
+                <textarea name="contact_content" id="context"></textarea>
             </div>
             <input type="submit" value="送出">
         </form>
@@ -167,7 +172,7 @@
     </footer>
 
 
-    <script src="{{asset('js/header.js')}}"></script>
+    <script src="{{ asset('js/header.js') }}"></script>
 </body>
 
 </html>

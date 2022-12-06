@@ -63,4 +63,22 @@ class IndexController extends Controller
     {
         return view('frontend.serviceDetail');
     }
+
+    public function store(Request $request)
+    {
+
+        contact_information::create([
+
+            'contact_name'=>$request->contact_name,
+            'contact_phone'=>$request->contact_phone,
+            'contact_mail'=>$request->contact_mail,
+            'common_trash'=>$request->common_trash,
+            'recycle_trash'=>$request->recycle_trash,
+            'uncommon_trash'=>$request->uncommon_trash,
+            'contact_content'=>$request->contact_content,
+
+        ]);
+
+        return redirect('/contactUs');
+    }
 }

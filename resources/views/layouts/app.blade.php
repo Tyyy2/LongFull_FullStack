@@ -29,7 +29,10 @@
             <!-- Page Content -->
             <main>
                 {{ $slot }}
+                @yield('main')
             </main>
+
+
         </div>
     </body>
 </html>

@@ -11,4 +11,9 @@ class BackendController extends Controller
 {
     //
 
+
+    public function contact_info()
+    {
+        return view('backend.contact_info');
+    }
 }

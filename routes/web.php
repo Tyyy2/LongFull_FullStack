@@ -42,6 +42,9 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
+Route::get('/admin/contact_info', [BackendController::class, 'contact_info'])->middleware(['auth', 'verified']);
+
+
 
 
 

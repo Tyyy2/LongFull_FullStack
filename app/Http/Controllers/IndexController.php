@@ -13,7 +13,7 @@ class IndexController extends Controller
 
     public function index()
     {
-        $news_database = index_new::orderby('id','desc')->take(2)->get();
+        $news_database = index_new::orderby('id', 'desc')->take(5)->get();
 
         return view('frontend.index', compact('news_database'));
     }
@@ -67,17 +67,17 @@ class IndexController extends Controller
     public function store(Request $request)
     {
 
-        contact_information::create([
-
-            'contact_name'=>$request->contact_name,
-            'contact_phone'=>$request->contact_phone,
-            'contact_mail'=>$request->contact_mail,
-            'common_trash'=>$request->common_trash,
-            'recycle_trash'=>$request->recycle_trash,
-            'uncommon_trash'=>$request->uncommon_trash,
-            'contact_content'=>$request->contact_content,
-
-        ]);
+        contact_information::create(
+            [
+                'contact_name' => $request->contact_name,
+                'contact_phone' => $request->contact_phone,
+                'contact_mail' => $request->contact_mail,
+                'common_trash' => $request->common_trash,
+                'recycle_trash' => $request->recycle_trash,
+                'uncommon_trash' => $request->uncommon_trash,
+                'contact_content' => $request->contact_content,
+            ]
+        );
 
         return redirect('/contactUs');
     }

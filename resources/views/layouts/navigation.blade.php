@@ -18,8 +18,8 @@
                 </div>
 
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-nav-link :href="'/dashboard'" :active="request()->routeIs('dashboard')">
-                        按鈕1
+                    <x-nav-link :href="'/admin/news_editor'" :active="request()->routeIs('dashboard')">
+                        編輯最新消息
                     </x-nav-link>
                 </div>
 

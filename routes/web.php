@@ -43,12 +43,20 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::get('/admin/contact_info', [BackendController::class, 'contact_info'])->middleware(['auth', 'verified']);
+
 Route::get('/admin/news_create', [BackendController::class, 'news_create'])->middleware(['auth', 'verified']);
 Route::get('/admin/news_list', [BackendController::class, 'news_list'])->middleware(['auth', 'verified']);
 ROute::post('/admin/news_create/store',[BackendController::class,'news_create_store'])->middleware(['auth', 'verified']);
+Route::get('/admin/news_editor/news{id?}', [BackendController::class, 'news_editor'])->middleware(['auth', 'verified']);
+ROute::post('/admin/news_create/update{id?}',[BackendController::class,'news_create_update'])->middleware(['auth', 'verified']);
+
+
 Route::get('/admin/employees_list', [BackendController::class, 'employees_list'])->middleware(['auth', 'verified']);
 Route::get('/admin/employees_create', [BackendController::class, 'employees_create'])->middleware(['auth', 'verified']);
 ROute::post('/admin/employees_create/store',[BackendController::class,'employees_create_store'])->middleware(['auth', 'verified']);
+Route::get('/admin/employees_editor/employees{id?}', [BackendController::class, 'employees_editor'])->middleware(['auth', 'verified']);
+ROute::post('/admin/employees_create/update{id?}',[BackendController::class,'employees_create_update'])->middleware(['auth', 'verified']);
+
 
 
 

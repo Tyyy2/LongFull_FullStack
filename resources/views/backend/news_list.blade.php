@@ -89,8 +89,8 @@
                     <td align="center" valign="middle" class="news-id">{{ $key + 1 }}</td>
                     <td align="start" valign="middle" class="news-content">{{ $item->news_title }}</td>
                     <td align="center" valign="middle" class="btn-td">
-                        <a href="" class="edit-btn">編輯</a>
-                        <a href="" class="delete-btn">刪除</a>
+                        <a href="/admin/news_editor/news{{$key+1}}" class="edit-btn">編輯</a>
+                        <a href="/admin/news/delete" class="delete-btn">刪除</a>
                     </td>
                 </tr>
             @endforeach

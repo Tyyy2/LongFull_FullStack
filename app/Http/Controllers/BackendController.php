@@ -48,6 +48,32 @@ class BackendController extends Controller
         return redirect('/admin/news_create');
     }
 
+    public function news_editor($id)
+    {
+        $news_data = index_new::find($id);
+        return view('backend.news_editor', compact('news_data'));
+    }
+
+    public function news_create_update(Request $request, $id)
+    {
+
+        if ($request->hasfile('news_img_path')) {
+            $img_name = $request->news_img_path->getClientOriginalName();
+            $request->news_img_path->move(public_path('img/news'), $img_name);
+            $img_path = 'img/news/' . $img_name;
+            index_new::find($id)->update(['news_img_path' => $img_path]);
+        }
+
+        if ($request->filled('news_title')) {
+            index_new::find($id)->update(['news_title' => $request->news_title]);
+        }
+        if ($request->filled('news_content')) {
+            index_new::find($id)->update(['news_content' => $request->news_content]);
+        }
+
+        return redirect('/admin/news_list');
+    }
+
 
 
     public function employees_list()
@@ -64,8 +90,8 @@ class BackendController extends Controller
     public function employees_create_store(Request $request)
     {
         $img_name = $request->employees_img_path->getClientOriginalName();
-        $request->employees_img_path->move(public_path('img/news'), $img_name);
-        $img_path = 'img/news/' . $img_name;
+        $request->employees_img_path->move(public_path('img/employees'), $img_name);
+        $img_path = 'img/employees/' . $img_name;
         employee::create(
             [
                 'employees_title' => $request->employees_title,
@@ -75,5 +101,31 @@ class BackendController extends Controller
         );
 
         return redirect('/admin/employees_create');
+    }
+
+    public function employees_editor($id)
+    {
+        $employees_data = employee::find($id);
+        return view('backend.employees_editor', compact('employees_data'));
+    }
+
+    public function employees_create_update(Request $request, $id)
+    {
+
+        if ($request->hasfile('employees_img_path')) {
+            $img_name = $request->employees_img_path->getClientOriginalName();
+            $request->employees_img_path->move(public_path('img/employees'), $img_name);
+            $img_path = 'img/employees/' . $img_name;
+            employee::find($id)->update(['employees_img_path' => $img_path]);
+        }
+
+        if ($request->filled('employees_title')) {
+            employee::find($id)->update(['employees_title' => $request->employees_title]);
+        }
+        if ($request->filled('employees_content')) {
+            employee::find($id)->update(['employees_content' => $request->employees_content]);
+        }
+
+        return redirect('/admin/employees_list');
     }
 }

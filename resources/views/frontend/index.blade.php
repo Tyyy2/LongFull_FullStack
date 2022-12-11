@@ -122,10 +122,10 @@
 
                 <div class="news-card-area">
                     <div class="news-card">
-                        <div class="card-img"><img src="{{ asset('img/Logo.png') }}" alt=""></div>
+                        <div class="card-img"><img src="{{ asset($news_database[0]->news_img_path) }}" alt=""></div>
                         <div class="card-info-area">
-                            <div class="card-title">{{$news_database[0]->news_title}}</div>
-                            <div class="card-content">{{$news_database[0]->news_content}}</div>
+                            <div class="card-title">標題</div>
+                            <div class="card-content">內文</div>
                             <a href="/newsDetail/news1">
                                 <div class="card-btn">更多資訊</div>
                             </a>

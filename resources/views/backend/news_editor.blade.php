@@ -92,7 +92,7 @@
             </div>
 
             <div class="img">
-                <input type="file" name="news_img_path" accept="image/*"><input type="submit" value="確定">
+                <input type="file" name="news_img_path" accept="image/*" required><input type="submit" value="確定">
             </div>
 
         </form>

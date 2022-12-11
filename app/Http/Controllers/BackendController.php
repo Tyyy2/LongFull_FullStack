@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\index_new;
 use App\Models\contact_information;
 use App\Models\employee;
+use Illuminate\Support\Facades\Validator;
 
 class BackendController extends Controller
 {
@@ -28,11 +29,14 @@ class BackendController extends Controller
 
     public function news_editor_store(Request $request)
     {
+        $img_name = $request->news_img_path->getClientOriginalName();
+        $request->news_img_path->move(public_path('img/news'), $img_name);
+        $img_path = 'img/news/' . $img_name;
         index_new::create(
             [
                 'news_title' => $request->news_title,
                 'news_content' => $request->news_content,
-
+                'news_img_path' => $img_path,
             ]
         );
 

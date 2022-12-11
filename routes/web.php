@@ -44,6 +44,7 @@ Route::middleware('auth')->group(function () {
 
 Route::get('/admin/contact_info', [BackendController::class, 'contact_info'])->middleware(['auth', 'verified']);
 Route::get('/admin/news_editor', [BackendController::class, 'news_editor'])->middleware(['auth', 'verified']);
+Route::get('/admin/news_list', [BackendController::class, 'news_list'])->middleware(['auth', 'verified']);
 ROute::post('/admin/news_editor/store',[BackendController::class,'news_editor_store'])->middleware(['auth', 'verified']);
 
 

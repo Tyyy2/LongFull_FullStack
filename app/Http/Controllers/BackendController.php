@@ -27,6 +27,12 @@ class BackendController extends Controller
         return view('backend.news_editor');
     }
 
+    public function news_list()
+    {
+
+        return view('backend.news_list');
+    }
+
     public function news_editor_store(Request $request)
     {
         $img_name = $request->news_img_path->getClientOriginalName();

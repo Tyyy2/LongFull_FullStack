@@ -17,6 +17,13 @@
                     </x-nav-link>
                 </div>
 
+
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-nav-link :href="'/admin/news_list'" :active="request()->routeIs('dashboard')">
+                        最新消息列表
+                    </x-nav-link>
+                </div>
+
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     <x-nav-link :href="'/admin/news_editor'" :active="request()->routeIs('dashboard')">
                         編輯最新消息

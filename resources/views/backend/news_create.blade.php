@@ -6,7 +6,7 @@
     </x-slot>
     @section('css')
         <style>
-            .news-editor {
+            .news-create {
                 border: 1px solid black;
                 border-radius: 20px;
                 background-color: lightgray;
@@ -19,14 +19,14 @@
                 align-items: center;
             }
 
-            .news-editor .title {
+            .news-create .title {
                 width: 90%;
                 height: 50px;
                 display: flex;
                 justify-content: space-between;
             }
 
-            .news-editor .title>label {
+            .news-create .title>label {
                 width: 5%;
                 height: 100%;
                 display: flex;
@@ -35,19 +35,19 @@
                 font-size: 24px;
             }
 
-            .news-editor .title #news_title {
+            .news-create .title #news_title {
                 width: 90%;
                 height: 100%;
             }
 
-            .news-editor .content {
+            .news-create .content {
                 width: 90%;
                 height: 80%;
                 display: flex;
                 justify-content: space-between;
             }
 
-            .news-editor .content>label {
+            .news-create .content>label {
                 width: 5%;
                 height: 100%;
                 display: flex;
@@ -56,12 +56,12 @@
                 font-size: 24px;
             }
 
-            .news-editor .content #news_content {
+            .news-create .content #news_content {
                 width: 90%;
                 height: 100%;
             }
 
-            .news-editor .img {
+            .news-create .img {
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -78,7 +78,7 @@
     @endsection
 
     @section('main')
-        <form action="/admin/news_editor/store" method="post" enctype="multipart/form-data" class="news-editor">
+        <form action="/admin/news_create/store" method="post" enctype="multipart/form-data" class="news-create">
             @csrf
 
             <div class="title">
@@ -92,6 +92,7 @@
             </div>
 
             <div class="img">
+                <label for="news_img_path">請選擇圖片:&nbsp;</label>
                 <input type="file" name="news_img_path" accept="image/*" required><input type="submit" value="確定">
             </div>
 

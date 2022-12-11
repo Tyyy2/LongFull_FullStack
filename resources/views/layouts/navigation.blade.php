@@ -25,20 +25,20 @@
                 </div>
 
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-nav-link :href="'/admin/news_editor'" :active="request()->routeIs('dashboard')">
-                        編輯最新消息
+                    <x-nav-link :href="'/admin/news_create'" :active="request()->routeIs('dashboard')">
+                        新增最新消息
                     </x-nav-link>
                 </div>
 
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-nav-link :href="'/dashboard'" :active="request()->routeIs('dashboard')">
-                        按鈕2
+                    <x-nav-link :href="'/admin/employees_list'" :active="request()->routeIs('dashboard')">
+                        人才招募列表
                     </x-nav-link>
                 </div>
 
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-nav-link :href="'/dashboard'" :active="request()->routeIs('dashboard')">
-                        按鈕3
+                    <x-nav-link :href="'/admin/employees_create'" :active="request()->routeIs('dashboard')">
+                        新增人才招募
                     </x-nav-link>
                 </div>
             </div>

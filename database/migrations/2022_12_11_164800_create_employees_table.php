@@ -19,6 +19,7 @@ return new class extends Migration
 
             $table->string('employ_img_path')->comment('人才招募圖片路徑');
             $table->string('employ_title')->comment('人才招募圖片標題');
+            $table->string('employ_content')->comment('人才招募圖內容');
 
         });
     }

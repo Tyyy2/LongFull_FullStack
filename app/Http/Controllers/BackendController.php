@@ -21,19 +21,14 @@ class BackendController extends Controller
     }
 
 
-    public function news_editor()
+    public function news_create()
     {
 
-        return view('backend.news_editor');
+        return view('backend.news_create');
     }
 
-    public function news_list()
-    {
 
-        return view('backend.news_list');
-    }
-
-    public function news_editor_store(Request $request)
+    public function news_create_store(Request $request)
     {
         $img_name = $request->news_img_path->getClientOriginalName();
         $request->news_img_path->move(public_path('img/news'), $img_name);
@@ -46,6 +41,26 @@ class BackendController extends Controller
             ]
         );
 
-        return redirect('/admin/news_editor');
+        return redirect('/admin/news_create');
     }
+
+    public function news_list()
+    {
+        $news_data = index_new::get();
+        return view('backend.news_list', compact('news_data'));
+    }
+
+    public function employees_list()
+    {
+        $employees_data = employee::get();
+        return view('backend.employees_list', compact('employees_data'));
+    }
+
+    public function employees_create()
+    {
+
+        return view('backend.employees_create');
+    }
+
+
 }

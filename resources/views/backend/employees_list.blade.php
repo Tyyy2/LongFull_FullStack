@@ -1,7 +1,7 @@
 <x-app-layout>
     @section('css')
         <style>
-            .news-table {
+            .employees-table {
                 width: 80%;
                 padding: 50px 0;
                 margin: auto;
@@ -12,7 +12,7 @@
                 background-color: white;
             }
 
-            .news-table>table {
+            .employees-table>table {
                 width: 100%;
                 height: auto;
 
@@ -26,23 +26,23 @@
                 border: 1px solid black;
             }
 
-            .news-table tr {
+            .employees-table tr {
                 width: 100%;
                 height: 50px;
             }
 
-            .news-table tr .news-id {
+            .employees-table tr .employees-id {
 
                 width: 10%;
                 height: 100%;
             }
 
-            .news-table tr .news-content {
+            .employees-table tr .employees-content {
                 width: 70%;
                 height: 100%;
             }
 
-            .news-table tr .btn-td {
+            .employees-table tr .btn-td {
                 width: 100%;
                 height: 100%;
             }
@@ -57,7 +57,7 @@
 
             }
 
-            .news-table tr .btn-td a {
+            .employees-table tr .btn-td a {
                 display: inline-block;
                 height: 20px;
                 width: 50px;
@@ -73,16 +73,16 @@
     @endsection
 
     @section('main')
-        <table class="news-table">
+        <table class="employees-table">
             <tr>
                 <th>編號</th>
                 <th>消息</th>
                 <th>動作</th>
             </tr>
-            @foreach ($news_data as $key => $item)
+            @foreach ($employees_data as $key => $item)
                 <tr>
-                    <td align="center" valign="middle" class="news-id">{{ $key + 1 }}</td>
-                    <td align="start" valign="middle" class="news-content">{{ $item->news_title }}</td>
+                    <td align="center" valign="middle" class="employees-id">{{ $key + 1 }}</td>
+                    <td align="start" valign="middle" class="employees-content">{{ $item->employees_title }}</td>
                     <td align="center" valign="middle" class="btn-td">
                         <a href="" class="edit-btn">編輯</a>
                         <a href="" class="delete-btn">刪除</a>

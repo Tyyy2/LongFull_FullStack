@@ -112,15 +112,6 @@
     </header>
 
     <main>
-        <div class="news-container">
-            <div class="news-text">
-                <div class="news-title">{{ $newsDetail_database->news_title }}</div>
-                <div class="news-content">{{ $newsDetail_database->news_content }}</div>
-            </div>
-
-            <div class="news-img"><img src="{{ $newsDetail_database->news_img_path }}" alt=""></div>
-        </div>
-
 
         <div class="back-btn"><a href="/index">回上頁</a></div>
 

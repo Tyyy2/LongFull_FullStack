@@ -20,7 +20,11 @@ class BackendController extends Controller
         return view('backend.contact_info', compact('contact_info'));
     }
 
-
+    public function news_list()
+    {
+        $news_data = index_new::get();
+        return view('backend.news_list', compact('news_data'));
+    }
     public function news_create()
     {
 
@@ -44,11 +48,7 @@ class BackendController extends Controller
         return redirect('/admin/news_create');
     }
 
-    public function news_list()
-    {
-        $news_data = index_new::get();
-        return view('backend.news_list', compact('news_data'));
-    }
+
 
     public function employees_list()
     {
@@ -61,6 +61,19 @@ class BackendController extends Controller
 
         return view('backend.employees_create');
     }
+    public function employees_create_store(Request $request)
+    {
+        $img_name = $request->employees_img_path->getClientOriginalName();
+        $request->employees_img_path->move(public_path('img/news'), $img_name);
+        $img_path = 'img/news/' . $img_name;
+        employee::create(
+            [
+                'employees_title' => $request->employees_title,
+                'employees_content' => $request->employees_content,
+                'employees_img_path' => $img_path,
+            ]
+        );
 
-
+        return redirect('/admin/employees_create');
+    }
 }

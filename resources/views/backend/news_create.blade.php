@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            編輯最新消息
+            新增最新消息
         </h2>
     </x-slot>
     @section('css')

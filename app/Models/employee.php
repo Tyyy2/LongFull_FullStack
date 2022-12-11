@@ -8,13 +8,14 @@ use Illuminate\Database\Eloquent\Model;
  * @property integer $id
  * @property string $created_at
  * @property string $updated_at
- * @property string $employ_img_path
- * @property string $employ_title
+ * @property string $employees_img_path
+ * @property string $employees_title
+ * @property string $employees_content
  */
 class employee extends Model
 {
     /**
      * @var array
      */
-    protected $fillable = ['created_at', 'updated_at', 'employ_img_path', 'employ_title'];
+    protected $fillable = ['created_at', 'updated_at', 'employees_img_path', 'employees_title', 'employees_content'];
 }

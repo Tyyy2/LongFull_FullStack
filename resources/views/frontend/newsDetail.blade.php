@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+     <title>榮輔環保公司</title>
     <link rel="stylesheet" href="{{ asset('css/newsDetail.css') }}">
     <link rel="stylesheet" href="{{ asset('/css/header&footer.css') }}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
@@ -116,24 +116,10 @@
         <div class="back-btn"><a href="/index">回上頁</a></div>
 
         <div class="phone-area">
-            <div class="phone-news-title">標題</div>
-            <div class="swiper-container">
-                <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">Slide 1</div>
-                        <div class="swiper-slide">Slide 2</div>
-                        <div class="swiper-slide">Slide 3</div>
-                        <div class="swiper-slide">Slide 4</div>
-                        <div class="swiper-slide">Slide 5</div>
-                    </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-pagination"></div>
-                </div>
+            <div class="phone-news-title">{{ $newsDetail_database->news_title }}</div>
+            <div class="photo-container"><img src="{{ asset($newsDetail_database->news_img_path) }}" alt="">
             </div>
-            <div class="phone-news-content">
-                內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文
-            </div>
+            <div class="phone-news-content">{{ $newsDetail_database->news_content }}</div>
         </div>
 
     </main>
@@ -178,7 +164,7 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="{{asset('js/header.js')}}"></script>
+    <script src="{{ asset('js/header.js') }}"></script>
     <script>
         var swiper = new Swiper(".mySwiper", {
             navigation: {

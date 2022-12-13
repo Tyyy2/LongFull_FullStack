@@ -25,7 +25,6 @@ main .banner img {
   top: 50%;
   left: 50%;
   translate: -50% -50%;
-  opacity: 0.6;
 }
 main #bulletin-board {
   width: 100%;
@@ -106,7 +105,7 @@ main #bulletin-board .news-area .news-card-area .news-card .card-info-area .card
   font-weight: 400;
   font-family: "Arial";
   color: black;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 main #bulletin-board .news-area .news-card-area .news-card .card-info-area .card-content {
   width: 100%;
@@ -185,7 +184,6 @@ main #bulletin-board .employ-area .employ-card {
 main #bulletin-board .employ-area .employ-card .card-img {
   width: 50%;
   height: 100%;
-  background-color: rgb(180, 180, 180);
   margin-right: 20px;
 }
 main #bulletin-board .employ-area .employ-card .card-img img {
@@ -208,7 +206,7 @@ main #bulletin-board .employ-area .employ-card .card-info-area .card-title {
   font-weight: 400;
   font-family: "Arial";
   color: black;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 main #bulletin-board .employ-area .employ-card .card-info-area .card-content {
   width: 100%;

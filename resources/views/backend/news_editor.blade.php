@@ -78,17 +78,18 @@
     @endsection
 
     @section('main')
-        <form action="/admin/news_create/update{{$news_data->id}}" method="post" enctype="multipart/form-data" class="news-create">
+        <form action="/admin/news_create/update{{ $news_data->id }}" method="post" enctype="multipart/form-data"
+            class="news-create">
             @csrf
 
             <div class="title">
                 <label for="news_title">標題</label>
-                <input type="text" name="news_title" id="news_title" placeholder="{{$news_data->news_title}}">
+                <input type="text" maxlength="8"  name="news_title" id="news_title" placeholder="原:{{ $news_data->news_title }}">
             </div>
 
             <div class="content">
                 <label for="news_content">內文</label>
-                <input type="text" name="news_content" id="news_content" placeholder="{{$news_data->news_content}}">
+                <textarea cols="50" maxlength="250" name="news_content" id="news_content" placeholder="原:&#10;{{ $news_data->news_content }}"></textarea>
             </div>
 
             <div class="img">

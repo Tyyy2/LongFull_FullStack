@@ -83,12 +83,12 @@
 
             <div class="title">
                 <label for="news_title">標題</label>
-                <input type="text" name="news_title" id="news_title">
+                <input type="text" maxlength="8" name="news_title" id="news_title" placeholder="上限8個字">
             </div>
 
             <div class="content">
                 <label for="news_content">內文</label>
-                <input type="text" name="news_content" id="news_content">
+                <textarea cols="50" maxlength="250" name="news_content" id="news_content" placeholder="上限250個字"></textarea>
             </div>
 
             <div class="img">

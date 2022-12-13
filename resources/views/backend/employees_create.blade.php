@@ -83,17 +83,18 @@
 
             <div class="title">
                 <label for="employees_title">標題</label>
-                <input type="text" name="employees_title" id="employees_title">
+                <input type="text" maxlength="8"  name="employees_title" id="employees_title" placeholder="上限8個字">
             </div>
 
             <div class="content">
                 <label for="employees_content">內文</label>
-                <input type="text" name="employees_content" id="employees_content">
+                <textarea cols="50" maxlength="250" name="employees_content" id="employees_content" placeholder="上限?個字"></textarea>
             </div>
 
             <div class="img">
                 <label for="employees_img_path">請選擇圖片:&nbsp;</label>
-                <input type="file" name="employees_img_path" accept="image/*" required><input type="submit" value="確定">
+                <input type="file" name="employees_img_path" accept="image/*" required><input type="submit"
+                    value="確定">
             </div>
 
         </form>

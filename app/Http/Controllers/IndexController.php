@@ -14,24 +14,19 @@ class IndexController extends Controller
     public function index()
     {
         $news_database = index_new::orderby('id', 'desc')->take(5)->get();
-
-        return view('frontend.index', compact('news_database'));
+        $employees_database = employee::orderby('id', 'desc')->take(2)->get();
+        return view('frontend.index', compact('news_database','employees_database'));
     }
-
 
     public function aboutUs()
     {
         return view('frontend.aboutUs');
     }
 
-
     public function benefits()
     {
         return view('frontend.benefits');
     }
-
-
-
 
     public function benefitsDetail()
     {
@@ -47,9 +42,16 @@ class IndexController extends Controller
 
     public function newsDetail($id)
     {
-        $newsDetail_database = index_new::get();
+        $newsDetail_database = index_new::find($id);
 
         return view('frontend.newsDetail', compact('newsDetail_database'));
+    }
+
+      public function employeesDetail($id)
+    {
+        $employees_database = employee::find($id);
+
+        return view('frontend.employeesDetail', compact('employees_database'));
     }
 
 

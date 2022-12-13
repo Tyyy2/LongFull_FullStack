@@ -12,7 +12,7 @@ class BackendController extends Controller
 {
     //
 
-
+    //--contact function
     public function contact_info()
     {
 
@@ -20,6 +20,14 @@ class BackendController extends Controller
         return view('backend.contact_info', compact('contact_info'));
     }
 
+    public function contact_info_delete($id)
+    {
+        contact_information::destroy($id);
+        return redirect('/admin/contact_info');
+    }
+    //--End of contact function
+
+    //--news function
     public function news_list()
     {
         $news_data = index_new::get();
@@ -74,8 +82,15 @@ class BackendController extends Controller
         return redirect('/admin/news_list');
     }
 
+    public function news_delete($id)
+    {
+        index_new::destroy($id);
+        return redirect('/admin/news_list');
+    }
+    //--End of news function
 
 
+    //--employees function
     public function employees_list()
     {
         $employees_data = employee::get();
@@ -128,4 +143,11 @@ class BackendController extends Controller
 
         return redirect('/admin/employees_list');
     }
+
+    public function employees_delete($id)
+    {
+        employee::destroy($id);
+        return redirect('/admin/employees_list');
+    }
+    //--End of employees function
 }

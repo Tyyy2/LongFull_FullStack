@@ -2,18 +2,19 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>榮輔環保公司</title>
-  <link rel="stylesheet" href="{{ asset('css/benefits.css')}}">
-  <link rel="stylesheet" href="{{ asset('/css/header&footer.css')}}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>榮輔環保公司</title>
+    <link rel="stylesheet" href="{{ asset('css/newsDetail.css') }}">
+    <link rel="stylesheet" href="{{ asset('/css/header&footer.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
-  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </head>
 
 <body>
+
 
 
     <header>
@@ -110,87 +111,71 @@
         </div>
     </header>
 
-  <main>
-    <div class="benefits-btns">
+    <main>
 
-      <button onclick="picShow('springParty')">春酒</button>
-      <button onclick="picShow('healthCheck')">體檢</button>
-    </div>
-    <div class="benefits-card-wrap">
+        <div class="back-btn"><a href="/index">回上頁</a></div>
 
-    </div>
-  </main>
-
-  <footer>
-    <a class="footer-logo" href="/">
-        <img class="logo-img" src="{{ asset('img/Logo.png') }}">
-    </a>
-    <div class="footer-info">
-
-        <ul class="information">臺中市南屯區大墩四街400巷20號1樓
-            <li>電話：04-23827080/04-23827081</li>
-            <li>傳真：04-23824270</li>
-            <li>聯絡信箱：n6260@ms32.hinet.net</li>
-        </ul>
-
-        <ul class="business-hours">營業時間:
-            <li> 週一~五: 08:00 – 17:00</li>
-        </ul>
-
-        <div class="footer-social-media-area">
-            <a href="https://www.facebook.com/zzz70042123" target="_blank">
-                <img src="{{ asset('img/header&footer/SVG-FB-black.svg') }}" alt="">
-            </a>
-            <a href="/contactUs">
-                <img src="{{ asset('img/header&footer/SVG-mail-black.svg') }}" alt="">
-            </a>
-
+        <div class="phone-area">
+            <div class="phone-news-title">{{ $employees_database->employees_title}}</div>
+            <div class="photo-container"><img src="{{ asset($employees_database->employees_img_path) }}" alt="">
+            </div>
+            <div class="phone-news-content">{{$employees_database->employees_content}}</div>
         </div>
 
-    </div>
-    <div class="google-map">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.847069559323!2d120.6420298148232!3d24.142008284397768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693db8f531fd3d%3A0xe6f1a995d9e8592d!2z5qau6LyU5LyB5qWt6IKh5Lu95pyJ6ZmQ5YWs5Y-4!5e0!3m2!1szh-TW!2stw!4v1668348951020!5m2!1szh-TW!2stw"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-    <div class="copy-right">CopyRight&copy;榮輔企業股份有限公司&nbsp;<span><a href="https://www.moi.gov.tw/cp.aspx?n=10953"
-                target="_blank"> 隱私權政策</a></span></div>
-</footer>
+    </main>
+
+    <footer>
+        <a class="footer-logo" href="/">
+            <img class="logo-img" src="{{ asset('img/Logo.png') }}">
+        </a>
+        <div class="footer-info">
+
+            <ul class="information">臺中市南屯區大墩四街400巷20號1樓
+                <li>電話：04-23827080/04-23827081</li>
+                <li>傳真：04-23824270</li>
+                <li>聯絡信箱：n6260@ms32.hinet.net</li>
+            </ul>
+
+            <ul class="business-hours">營業時間:
+                <li> 週一~五: 08:00 – 17:00</li>
+            </ul>
+
+            <div class="footer-social-media-area">
+                <a href="https://www.facebook.com/zzz70042123" target="_blank">
+                    <img src="{{ asset('img/header&footer/SVG-FB-black.svg') }}" alt="">
+                </a>
+                <a href="/contactUs">
+                    <img src="{{ asset('img/header&footer/SVG-mail-black.svg') }}" alt="">
+                </a>
+
+            </div>
+
+        </div>
+        <div class="google-map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.847069559323!2d120.6420298148232!3d24.142008284397768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693db8f531fd3d%3A0xe6f1a995d9e8592d!2z5qau6LyU5LyB5qWt6IKh5Lu95pyJ6ZmQ5YWs5Y-4!5e0!3m2!1szh-TW!2stw!4v1668348951020!5m2!1szh-TW!2stw"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="copy-right">CopyRight&copy;榮輔企業股份有限公司&nbsp;<span><a href="https://www.moi.gov.tw/cp.aspx?n=10953"
+                    target="_blank"> 隱私權政策</a></span></div>
+    </footer>
 
 
-  <script src="{{asset('js/header.js')}}"></script>
 
-
-  <script>
-    const cardWrap = document.querySelector('.benefits-card-wrap')
-    const btns = document.querySelectorAll('main button')
-    function picShow(type) {
-      btns.forEach(btn => {
-        btn.classList.remove('active')
-      });
-      event.target.classList.add('active')
-      cardWrap.innerHTML = ''
-      for (let index = 1; index < 10; index++) {
-        cardWrap.innerHTML += `
-                <div class="benefits-card">
-                  <img onclick=lightbox() src="{{asset('img/${type}/${index}.jpg')}}" alt="">
-              </div>
-              `
-      }
-    }
-
-function lightbox() {
-  Swal.fire({
-      imageUrl: `${event.target.src}`,
-      imageHeight: 500,
-      imageAlt: '福利照片',
-      confirmButtonColor:'#00391F'
-    })
-
-}
-  </script>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="{{ asset('js/header.js') }}"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
 </body>
 
 </html>

@@ -78,17 +78,20 @@
     @endsection
 
     @section('main')
-        <form action="/admin/employees_create/update{{$employees_data->id}}" method="post" enctype="multipart/form-data" class="employees-create">
+        <form action="/admin/employees_create/update{{ $employees_data->id }}" method="post" enctype="multipart/form-data"
+            class="employees-create">
             @csrf
 
             <div class="title">
                 <label for="employees_title">標題</label>
-                <input type="text" name="employees_title" id="employees_title" placeholder="{{$employees_data->employees_title}}">
+                <input type="text"  maxlength="8" name="employees_title" id="employees_title"
+                    placeholder="原:{{ $employees_data->employees_title }}">
             </div>
 
             <div class="content">
                 <label for="employees_content">內文</label>
-                <input type="text" name="employees_content" id="employees_content" placeholder="{{$employees_data->employees_content}}">
+                <textarea cols="50" maxlength="250" name="employees_content" id="employees_content"
+                    placeholder="原:&#10;{{ $employees_data->employees_content }}"></textarea>
             </div>
 
             <div class="img">

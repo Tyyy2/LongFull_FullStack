@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>榮輔環保公司</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="{{ asset('css/index.css') }}">
     <link rel="stylesheet" href="{{ asset('css/header&footer.css') }}">
@@ -122,22 +122,26 @@
 
                 <div class="news-card-area">
                     <div class="news-card">
-                        <div class="card-img"><img src="{{ asset($news_database[0]->news_img_path) }}" alt=""></div>
+                        <div class="card-img"><img src="{{ asset($news_database[0]->news_img_path) }}" alt="">
+                        </div>
                         <div class="card-info-area">
-                            <div class="card-title">標題</div>
-                            <div class="card-content">內文</div>
-                            <a href="/newsDetail/news1">
+                            <div class="card-title">{{ Str::limit($news_database[0]->news_title, 16, $end = '') }}
+                            </div>
+                            <div class="card-content">{{ Str::limit($news_database[0]->news_content, 40) }}</div>
+                            <a href="/newsDetail/news{{ $news_database[0]->id }}">
                                 <div class="card-btn">更多資訊</div>
                             </a>
                         </div>
 
                     </div>
                     <div class="news-card">
-                        <div class="card-img"><img src="{{ asset('img/index/news-two.png') }}" alt=""></div>
+                        <div class="card-img"><img src="{{ asset($news_database[1]->news_img_path) }}" alt="">
+                        </div>
                         <div class="card-info-area">
-                            <div class="card-title">人才招募</div>
-                            <div class="card-content">司機、助手、行政助理、會計助理</div>
-                            <a href="/newsDetail/news2">
+                            <div class="card-title">{{ Str::limit($news_database[1]->news_title, 16, $end = '') }}
+                            </div>
+                            <div class="card-content">{{ Str::limit($news_database[1]->news_content, 40) }}</div>
+                            <a href="/newsDetail/news{{ $news_database[1]->id }}">
                                 <div class="card-btn">更多資訊</div>
                             </a>
                         </div>
@@ -146,37 +150,42 @@
                 </div>
                 <div class="news-detail-area">
                     <div class="news-detail">
-                        <div class="news-detail-content">符合台中市環保局節能減碳政策-配置油電車。</div>
-                        <a href="/newsDetail" class="news-detail-button">看更多</a>
+                        <div class="news-detail-content">{{ $news_database[2]->news_title }}</div>
+                        <a href="/newsDetail/news{{ $news_database[2]->id }}" class="news-detail-button">看更多</a>
                     </div>
                     <div class="news-detail">
-                        <div class="news-detail-content">國中、小學獎助學金</div>
-                        <a href="/newsDetail" class="news-detail-button">看更多</a>
+                        <div class="news-detail-content">{{ $news_database[3]->news_title }}</div>
+                        <a href="/newsDetail/news{{ $news_database[3]->id }}" class="news-detail-button">看更多</a>
                     </div>
                     <div class="news-detail">
-                        <div class="news-detail-content">社會回饋計畫-捐贈區公所公務貨車https://www.mypeoplevol.com/Article/33387
-                        </div>
-                        <a href="/newsDetail" class="news-detail-button">看更多</a>
+                        <div class="news-detail-content">{{ $news_database[4]->news_title }}</div>
+                        <a href="/newsDetail/news{{ $news_database[4]->id }}" class="news-detail-button">看更多</a>
                     </div>
                 </div>
             </div>
             <div class="employ-area area_none">
                 <div class="employ-card">
-                    <div class="card-img"><img src="" alt=""></div>
+                    <div class="card-img"><img src="{{ asset($employees_database[0]->employees_img_path) }}"
+                            alt=""></div>
                     <div class="card-info-area">
-                        <div class="card-title">誠徵</div>
-                        <div class="card-content">沿街回收車助手</div>
-                        <a href="">
+                        <div class="card-title">
+                            {{ Str::limit($employees_database[0]->employees_title, 16, $end = '') }}
+                        </div>
+                        <div class="card-content">{{ Str::limit($employees_database[0]->employees_content, 40) }}</div>
+                        <a href="/employeesDetail/employees{{ $employees_database[0]->id }}">
                             <div class="card-btn">更多資訊</div>
                         </a>
                     </div>
                 </div>
                 <div class="employ-card">
-                    <div class="card-img"><img src="" alt=""></div>
+                    <div class="card-img"><img src="{{ asset($employees_database[1]->employees_img_path) }}"
+                            alt=""></div>
                     <div class="card-info-area">
-                        <div class="card-title">誠徵</div>
-                        <div class="card-content">垃圾車司機、機動司機、回收車司機、回收助手</div>
-                        <a href="">
+                        <div class="card-title">
+                            {{ Str::limit($employees_database[1]->employees_title, 16, $end = '') }}
+                        </div>
+                        <div class="card-content">{{ Str::limit($employees_database[1]->employees_content, 40) }}</div>
+                        <a href="/employeesDetail/employees{{ $employees_database[1]->id }}">
                             <div class="card-btn">更多資訊</div>
                         </a>
                     </div>

@@ -15,7 +15,7 @@ class IndexController extends Controller
     {
         $news_database = index_new::orderby('id', 'desc')->take(5)->get();
         $employees_database = employee::orderby('id', 'desc')->take(2)->get();
-        return view('frontend.index', compact('news_database','employees_database'));
+        return view('frontend.index', compact('news_database', 'employees_database'));
     }
 
     public function aboutUs()
@@ -47,7 +47,7 @@ class IndexController extends Controller
         return view('frontend.newsDetail', compact('newsDetail_database'));
     }
 
-      public function employeesDetail($id)
+    public function employeesDetail($id)
     {
         $employees_database = employee::find($id);
 

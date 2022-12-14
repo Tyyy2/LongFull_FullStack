@@ -171,7 +171,8 @@
                         <div class="card-title">
                             {{ Str::limit($employees_database[0]->employees_title, 16, $end = '') }}
                         </div>
-                        <div class="card-content">{{ Str::limit($employees_database[0]->employees_content, 40) }}</div>
+                        <div class="card-content">{{ Str::limit($employees_database[0]->employees_content, 40) }}
+                        </div>
                         <a href="/employeesDetail/employees{{ $employees_database[0]->id }}">
                             <div class="card-btn">更多資訊</div>
                         </a>
@@ -184,7 +185,8 @@
                         <div class="card-title">
                             {{ Str::limit($employees_database[1]->employees_title, 16, $end = '') }}
                         </div>
-                        <div class="card-content">{{ Str::limit($employees_database[1]->employees_content, 40) }}</div>
+                        <div class="card-content">{{ Str::limit($employees_database[1]->employees_content, 40) }}
+                        </div>
                         <a href="/employeesDetail/employees{{ $employees_database[1]->id }}">
                             <div class="card-btn">更多資訊</div>
                         </a>

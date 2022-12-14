@@ -12,7 +12,6 @@
                 margin: auto;
                 margin-top: 50px;
                 height: auto;
-                border-radius: 20px;
                 border: 2px solid black;
                 background-color: white;
             }

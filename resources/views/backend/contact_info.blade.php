@@ -12,8 +12,7 @@
                 padding: 50px 0;
                 margin: auto;
                 height: auto;
-                border-radius: 20px;
-                border: 5px solid black;
+                border: 2px solid black;
                 background-color: white;
             }
 
@@ -94,7 +93,9 @@
                                 其他&nbsp;
                             @endif
                         </td>
-                        <td align="center" valign="middle"><a href="/admin/contact_info/delete/contact_info{{ $item->id}}" class="delete-btn">刪除</a></td>
+                        <td align="center" valign="middle"><a
+                                href="/admin/contact_info/delete/contact_info{{ $item->id }}" class="delete-btn">刪除</a>
+                        </td>
                     </tr>
                 @endforeach
             </table>

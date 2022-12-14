@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>榮輔環保公司</title>
+    <title>榮輔環保公司</title>
     <link rel="stylesheet" href="{{ asset('css/newsDetail.css') }}">
     <link rel="stylesheet" href="{{ asset('/css/header&footer.css') }}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
@@ -119,7 +119,7 @@
             <div class="phone-news-title">{{ $newsDetail_database->news_title }}</div>
             <div class="photo-container"><img src="{{ asset($newsDetail_database->news_img_path) }}" alt="">
             </div>
-            <div class="phone-news-content">{{ $newsDetail_database->news_content }}</div>
+            <div class="phone-news-content">{!! nl2br(e($newsDetail_database->news_content)) !!}</div>
         </div>
 
     </main>
